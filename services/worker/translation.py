@@ -25,9 +25,11 @@ class NoRedirects(HTTPRedirectHandler):
         return None
 
 
-def query_provider(text: str) -> dict:
+def query_provider(text: str, source_language: str = "ja") -> dict:
+    if source_language not in {"ja", "ko"}:
+        raise TranslationError("UNSUPPORTED_LANGUAGE")
     request = Request(
-        ENDPOINT + "?" + urlencode({"q": text, "langpair": "ja|zh-CN"}),
+        ENDPOINT + "?" + urlencode({"q": text, "langpair": f"{source_language}|zh-CN"}),
         headers={"Accept": "application/json", "User-Agent": "ComicTranslation-P01-Probe/0.1"},
     )
     try:
@@ -64,12 +66,15 @@ class Translation:
 class MyMemoryTranslator:
     """One serial experiment session, no retries, no paid fallback, no training writes."""
 
-    def __init__(self, *, character_budget: int = 1000, transport=query_provider):
+    def __init__(self, *, character_budget: int = 1000, source_language="ja", transport=None):
         if not 1 <= character_budget <= 1000:
             raise ValueError("Experiment budget must be between 1 and 1000")
         self.character_budget = character_budget
+        if source_language not in {"ja", "ko"}:
+            raise TranslationError("UNSUPPORTED_LANGUAGE")
+        self.source_language = source_language
         self.attempted_characters = 0
-        self.transport = transport
+        self.transport = transport or (lambda text: query_provider(text, self.source_language))
 
     def translate(self, text: str) -> Translation:
         if not text.strip():
@@ -98,10 +103,12 @@ class MyMemoryTranslator:
             warnings.append("UNCHANGED_TEXT")
         if any("\u3040" <= c <= "\u30ff" for c in translated):
             warnings.append("JAPANESE_REMAINS")
+        if any("\uac00" <= c <= "\ud7af" for c in translated):
+            warnings.append("KOREAN_REMAINS")
         if not any("\u3400" <= c <= "\u9fff" for c in translated):
             warnings.append("NO_CHINESE_CHARACTERS")
         return Translation(
-            "mymemory-anonymous", "ja", "zh-CN", translated,
+            "mymemory-anonymous", self.source_language, "zh-CN", translated,
             round((time.perf_counter() - start) * 1000), len(text), warnings,
             datetime.now(UTC).isoformat(),
         )

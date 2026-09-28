@@ -1,0 +1,35 @@
+{
+  "scope": "local research only; complete distribution audit remains P01/P06 work",
+  "files": [
+    {
+      "path": "detector/detector_int8.onnx",
+      "url": "https://huggingface.co/ogkalu/comic-text-and-bubble-detector/resolve/16e8a622f91fabc6b5b65c96d32d1183f8843546/detector_int8.onnx",
+      "sha256": "b5022ad46416b6fe4f88b0cc082cfd2ff5b1cfc624088c2f19879485493f5913",
+      "license_claim": "Apache-2.0 model card; training-image rights not independently audited"
+    },
+    {
+      "path": "manga-ocr/encoder_model_int8.onnx",
+      "url": "https://huggingface.co/ogkalu/manga-ocr-onnx/resolve/c68e56437a2e0b13a7b1f4efa0ffce76efd0478d/encoder_model_int8.onnx",
+      "sha256": "0eaf2b867292a44700ce38ef028b90639a2e36fc4c18c2bcdd1de7409488adb3",
+      "license_claim": "Apache-2.0 conversion card; original kha-white/manga-ocr-base Apache-2.0"
+    },
+    {
+      "path": "manga-ocr/decoder_model_int8.onnx",
+      "url": "https://huggingface.co/ogkalu/manga-ocr-onnx/resolve/c68e56437a2e0b13a7b1f4efa0ffce76efd0478d/decoder_model_int8.onnx",
+      "sha256": "3ff0d4c34c4a66613d98ff93e0b17f22a7b09dfbeec195c3e4d6f595af3a6b6c",
+      "license_claim": "Apache-2.0 conversion card; full conversion provenance review still required"
+    },
+    {
+      "path": "manga-ocr/vocab.txt",
+      "url": "https://huggingface.co/ogkalu/manga-ocr-onnx/resolve/c68e56437a2e0b13a7b1f4efa0ffce76efd0478d/vocab.txt",
+      "sha256": "5cb5c5586d98a2f331d9f8828e4586479b0611bfba5d8c3b6dadffc84d6a36a3",
+      "license_claim": "Apache-2.0 conversion card"
+    },
+    {
+      "path": "tesseract/kor.traineddata",
+      "url": "https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/87416418657359cb625c412a48b6e1d6d41c29bd/kor.traineddata",
+      "sha256": "6b85e11d9bbf07863b97b3523b1b112844c43e713df8b66418a081fd1060b3b2",
+      "license_claim": "Apache-2.0 official repository license"
+    }
+  ]
+}

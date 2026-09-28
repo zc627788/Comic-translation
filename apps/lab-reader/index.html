@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>漫画翻译 · 气泡覆盖实验</title><link rel="stylesheet" href="/assets/reader.css"></head>
+<body>
+<header><div class="brand">译格 <span>本地实验室</span></div><span class="tag">日文 / 韩文 → 简体中文</span></header>
+<main>
+<section class="intro"><p class="eyebrow">BUBBLE TRANSLATION LAB</p><h1>让中文回到气泡里。</h1>
+<p>自动找气泡、识别原文、翻译并嵌字。随时切回原图，逐句核对。</p></section>
+<section class="workspace">
+<aside>
+<label for="sample">选择测试页</label><select id="sample" aria-label="选择测试页"></select>
+<p class="disclosure">图片在本机处理。点击开始后，识别出的文字会发送至 MyMemory 免费接口。机器译文可能有误；疑难区域会保留原文。</p>
+<button id="process" class="primary">检测气泡并覆盖中文</button>
+<p class="shortcut">也可以 Ctrl + Shift + 左键点击图片</p>
+<div id="status" role="status" aria-live="polite">正在加载样本…</div>
+<div class="switch"><button id="original">恢复原图</button><button id="translated" disabled>显示译图</button></div>
+<button id="detection" disabled>查看检测框</button><a id="download" class="download" hidden download="translated.png">导出处理后的 PNG</a>
+<p id="metrics"></p><p class="small">这是独立测试阅读器。浏览器扩展对第三方网站的取图与覆盖仍待集成验收。</p>
+</aside>
+<section class="paper"><div class="view-label" id="view">原图</div><div id="image-wrap"><img id="comic" alt="漫画测试页" decoding="async"></div>
+<p id="credit"></p><a id="source" target="_blank" rel="noreferrer">原作来源与署名</a></section>
+</section>
+<details><summary>查看逐气泡识别与译文</summary><div id="regions">处理后显示真实结果。</div></details>
+</main><script type="module" src="/assets/reader.js"></script></body></html>

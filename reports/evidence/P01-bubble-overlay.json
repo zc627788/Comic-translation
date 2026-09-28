@@ -1,0 +1,117 @@
+{
+  "date": "2026-09-28",
+  "scope": "P01 local prototype; real models/provider cache; not extension acceptance",
+  "quality_status": "NOT_PASSED: Korean OCR errors and mistranslations remain",
+  "results": [
+    {
+      "language": "ja",
+      "size": [
+        990,
+        1400
+      ],
+      "source_sha256": "1fc6d5cfa1b554d281867515ae12d4ae6233a934b07521e569ebbc7a2bbadb55",
+      "detector": "RT-DETR-v2-int8",
+      "ocr": "manga-ocr-onnx-int8",
+      "tiles": [
+        [
+          0,
+          1400
+        ]
+      ],
+      "covered": 5,
+      "preserved": 1,
+      "elapsed_ms": 3385,
+      "outside_safe_modified_pixels": 0,
+      "modified_pixels": 22838,
+      "sample_id": "ja-page7",
+      "detected_dialogues": 6,
+      "cache_hits": 5,
+      "preserved_reasons": [
+        "OPEN_BUBBLE_BOUNDARY"
+      ]
+    },
+    {
+      "language": "ko",
+      "size": [
+        2400,
+        3389
+      ],
+      "source_sha256": "1c1e5ba34317140c660c79c1cd21284575ffeb332d9581e72645a0ca3bf28e5d",
+      "detector": "RT-DETR-v2-int8",
+      "ocr": "tesseract.js-kor",
+      "tiles": [
+        [
+          0,
+          3389
+        ]
+      ],
+      "covered": 2,
+      "preserved": 0,
+      "elapsed_ms": 4687,
+      "outside_safe_modified_pixels": 0,
+      "modified_pixels": 21512,
+      "sample_id": "ko-page1",
+      "detected_dialogues": 2,
+      "cache_hits": 2,
+      "preserved_reasons": []
+    },
+    {
+      "language": "ko",
+      "size": [
+        800,
+        2900
+      ],
+      "source_sha256": "b20541119656d6ac68f27b4dd2b06efd0064c0766e2bbfea1977e8e892d8e691",
+      "detector": "RT-DETR-v2-int8",
+      "ocr": "tesseract.js-kor",
+      "tiles": [
+        [
+          0,
+          1280
+        ],
+        [
+          1000,
+          2280
+        ],
+        [
+          1620,
+          2900
+        ]
+      ],
+      "covered": 3,
+      "preserved": 0,
+      "elapsed_ms": 3652,
+      "outside_safe_modified_pixels": 0,
+      "modified_pixels": 19474,
+      "sample_id": "ko-strip",
+      "detected_dialogues": 3,
+      "cache_hits": 3,
+      "preserved_reasons": []
+    },
+    {
+      "language": "ko",
+      "size": [
+        500,
+        500
+      ],
+      "source_sha256": "a9650a71bf71798151bab7a48af53faba29673acc55928ad5069cc52e7861f1b",
+      "detector": "RT-DETR-v2-int8",
+      "ocr": "tesseract.js-kor",
+      "tiles": [
+        [
+          0,
+          500
+        ]
+      ],
+      "covered": 0,
+      "preserved": 0,
+      "elapsed_ms": 854,
+      "outside_safe_modified_pixels": 0,
+      "modified_pixels": 0,
+      "sample_id": "blank-bubble",
+      "detected_dialogues": 0,
+      "cache_hits": 0,
+      "preserved_reasons": []
+    }
+  ]
+}
