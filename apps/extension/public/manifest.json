@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Comic Translation · 开发验证",
+  "version": "0.0.1",
+  "description": "P01 本地工程验证：主动扫描当前页图片，不上传图片，不执行翻译。",
+  "minimum_chrome_version": "116",
+  "permissions": ["activeTab", "scripting", "sidePanel"],
+  "host_permissions": ["http://127.0.0.1/*"],
+  "action": { "default_title": "打开漫画翻译开发面板" },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "side_panel": { "default_path": "sidepanel.html" },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; connect-src http://127.0.0.1:8765; style-src 'self'; img-src 'self' data:"
+  }
+}

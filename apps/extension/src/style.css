@@ -1,0 +1,17 @@
+:root { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; color: #20312d; background: #f3f6f3; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 260px; }
+main { padding: 22px 18px 40px; max-width: 680px; margin: auto; }
+header { margin-bottom: 24px; }
+.badge { font-size: 12px; letter-spacing: .08em; color: #426459; }
+h1 { font-size: 28px; margin: 10px 0; }
+h2 { font-size: 17px; margin: 0 0 12px; }
+p { color: #50615a; font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; }
+section { background: #fff; border: 1px solid #dce4de; padding: 18px; border-radius: 14px; margin-bottom: 16px; }
+button { width: 100%; border: 1px solid #215746; border-radius: 8px; background: #215746; color: white; padding: 11px; font: inherit; cursor: pointer; }
+button:focus-visible { outline: 3px solid #c28d37; outline-offset: 3px; }
+button:disabled { cursor: default; background: #e4e9e5; border-color: #d6dfd8; color: #66736a; }
+.secondary { color: #215746; background: white; }
+.images { padding: 0; list-style: none; max-height: 320px; overflow: auto; }
+.images li { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid #e9eeea; font-size: 13px; }
+.notice { background: #fcfaf3; }

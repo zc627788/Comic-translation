@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="2400" viewBox="0 0 720 2400">
+  <rect width="720" height="2400" fill="#fff"/>
+  <g stroke="#172c25" stroke-width="4" fill="#eef3ec">
+    <rect x="28" y="28" width="664" height="700"/><rect x="28" y="840" width="664" height="700"/><rect x="28" y="1652" width="664" height="700"/>
+  </g>
+  <g fill="white" stroke="#172c25" stroke-width="4"><ellipse cx="360" cy="250" rx="170" ry="120"/><ellipse cx="360" cy="1070" rx="170" ry="120"/><ellipse cx="360" cy="1900" rx="170" ry="120"/></g>
+  <g font-family="Yu Gothic,Meiryo,sans-serif" font-size="34" text-anchor="middle" fill="#172c25">
+    <text x="360" y="260">おはよう。</text><text x="360" y="1080">少し休もう。</text><text x="360" y="1910">また明日。</text>
+    <text x="360" y="2320" font-size="18">自有图形长图夹具 · 720 × 2400</text>
+  </g>
+</svg>

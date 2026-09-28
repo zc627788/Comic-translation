@@ -19,6 +19,8 @@ coverage/
 .ruff_cache/
 .mypy_cache/
 *.log
+.coverage
+*.tsbuildinfo
 
 # Private inputs, models and local evidence
 data/private/

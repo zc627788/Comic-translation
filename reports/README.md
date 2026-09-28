@@ -5,7 +5,7 @@
 | 阶段 | 报告 | 当前说明 |
 |---|---|---|
 | P00 | [规格基线总结](P00-specification.md) | 本轮完成后记录真实检查和交接 |
-| P01 | 执行时创建 `P01-foundation.md` | NOT_STARTED，不能提前写 PASS |
+| P01 | [基础工程报告](P01-foundation.md) | IN_PROGRESS，模型与扩展实际运行验收未完成 |
 | P02 | 执行时创建 `P02-single-image.md` | NOT_STARTED |
 | P03 | 执行时创建 `P03-reading-flow.md` | NOT_STARTED |
 | P04 | 执行时创建 `P04-quality.md` | NOT_STARTED |

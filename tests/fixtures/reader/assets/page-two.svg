@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="960" viewBox="0 0 720 960">
+  <rect width="720" height="960" fill="#fff"/>
+  <rect x="28" y="28" width="664" height="904" fill="#eef3ec" stroke="#172c25" stroke-width="4"/>
+  <path d="M30 700l140-180 160 240 175-300 185 275" fill="none" stroke="#172c25" stroke-width="4"/>
+  <ellipse cx="228" cy="203" rx="155" ry="115" fill="white" stroke="#172c25" stroke-width="4"/>
+  <rect x="410" y="320" width="220" height="180" rx="20" fill="#172c25"/>
+  <g font-family="Yu Gothic,Meiryo,sans-serif" text-anchor="middle">
+    <text x="228" y="194" font-size="30" fill="#172c25">どこへ</text><text x="228" y="237" font-size="30" fill="#172c25">行こうか？</text>
+    <text x="520" y="392" font-size="30" fill="white">海を</text><text x="520" y="438" font-size="30" fill="white">見に行こう。</text>
+    <text x="360" y="900" font-size="16" fill="#172c25">自有图形夹具 · PAGE 02 · 非真实漫画质量样本</text>
+  </g>
+</svg>

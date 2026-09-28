@@ -4,7 +4,7 @@
 
 ## 当前状态
 
-当前交付是 v0.1 开发规格，不是可运行产品。尚未实现扩展、推理服务、付款或生产部署。唯一进度来源是 [阶段状态](docs/progress.md)，不得根据文档存在判断功能已经完成。
+当前进入 P01 基础工程：已有可构建的扩展开发面板、可启动 API、worker 诊断和自有测试阅读器。检测/OCR/翻译等模型、计费和生产部署尚未实现。唯一进度来源是 [阶段状态](docs/progress.md)，不得根据文档存在判断功能已经完成。
 
 开发环境固定为 Windows / PowerShell；文本文件使用 UTF-8。首发目标为桌面 Chrome / Edge，日语 → 简体中文。
 
@@ -18,6 +18,18 @@
 ## 规格驱动方式
 
 借鉴 [GitHub Spec Kit](https://github.com/github/spec-kit) 的 constitution → specify → plan → tasks → implement → converge 流程，增加逐阶段证据和交接门槛。本仓库本轮未安装 Specify CLI，也不宣称已经执行官方斜杠命令；文档可独立驱动开发，未来可接入官方工具。
+
+## 本地开始
+
+按照 [本地启动说明](docs/development.md) 安装锁定依赖、启动阅读器和 API、构建并加载开发扩展。当前不需要 API 密钥，模型未就绪会明确提示。
+
+```powershell
+.\scripts\setup.ps1
+.\scripts\check.ps1
+npm run fixtures
+```
+
+另一终端可运行 `.\scripts\start-api.ps1`。开发插件构建输出为 `dist/extension`，不是可翻译的正式发布包。
 
 ## 文档检查
 

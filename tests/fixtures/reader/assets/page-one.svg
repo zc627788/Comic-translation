@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="960" viewBox="0 0 720 960">
+  <rect width="720" height="960" fill="#fff"/>
+  <g fill="none" stroke="#172c25" stroke-width="4">
+    <rect x="28" y="28" width="664" height="410"/>
+    <rect x="28" y="464" width="664" height="468"/>
+    <ellipse cx="480" cy="177" rx="152" ry="105"/>
+    <ellipse cx="212" cy="640" rx="132" ry="114"/>
+    <circle cx="165" cy="276" r="54"/>
+    <path d="M95 407 Q100 330 165 330 Q225 332 240 407 M122 268h20 m35 0h20 M147 295q18 15 36 0"/>
+    <path d="M395 850l72-150 65 90 53-130 76 190z"/>
+  </g>
+  <g font-family="Yu Gothic,Meiryo,sans-serif" text-anchor="middle" fill="#172c25">
+    <text x="480" y="168" font-size="32">今日は</text><text x="480" y="211" font-size="32">いい天気だね。</text>
+    <text x="212" y="637" font-size="30">一緒に</text><text x="212" y="682" font-size="30">出かけよう！</text>
+    <text x="360" y="910" font-size="16">自有图形夹具 · PAGE 01 · 非真实漫画质量样本</text>
+  </g>
+</svg>

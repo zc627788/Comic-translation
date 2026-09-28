@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>漫画翻译 · 自有测试阅读器</title>
+  <link rel="stylesheet" href="/reader.css" />
+</head>
+<body>
+  <header><span class="eyebrow">COMIC TRANSLATION / P01</span>
+    <h1>自有测试阅读器</h1>
+    <p>所有图形均为本项目生成的测试夹具，用于验证加载和取图行为。<br />它们不代表真实漫画翻译质量。</p>
+    <nav><a href="#normal">普通图片</a><a href="#cross-origin">跨域图片</a><a href="#dynamic">图片换源</a><a href="#lazy">懒加载</a></nav>
+  </header>
+  <main>
+    <aside class="advertisement" data-ad="true" aria-label="测试广告区域">
+      <img src="/assets/ad.svg" alt="测试广告横幅，不应默认选择" width="720" height="140" />
+    </aside>
+    <section id="normal"><div class="section-title"><span>01</span><h2>普通图片</h2></div>
+      <p>用于确认尺寸、顺序和重复扫描行为。</p>
+      <img class="page" src="/assets/page-one.svg" alt="日文气泡测试页一" width="720" height="960" />
+    </section>
+    <section><div class="section-title"><span>02</span><h2>响应式与重复图片</h2></div>
+      <p>同一图片重复出现；响应式图片应读取实际使用的来源。</p>
+      <picture><source media="(min-width: 1000px)" srcset="/assets/page-two.svg" />
+        <img class="page compact" src="/assets/page-one.svg" alt="响应式测试页" width="720" height="960" />
+      </picture>
+      <img class="icon" src="/assets/icon.svg" alt="小图标，应排除默认推荐" width="48" height="48" />
+    </section>
+    <section id="cross-origin"><div class="section-title"><span>03</span><h2>跨域图片</h2></div>
+      <p>来自另一端口，无 CORS 头。能显示不代表网页能读取像素。</p>
+      <img class="page compact" src="__ASSET_ORIGIN__/assets/page-two.svg" alt="跨域测试页" width="720" height="960" />
+    </section>
+    <section id="dynamic"><div class="section-title"><span>04</span><h2>复用节点与换源</h2></div>
+      <p>点击按钮更换同一节点的图片，用于验证旧任务不会覆盖新图。</p>
+      <button id="swap-source" type="button">更换当前图片</button>
+      <p id="swap-status" role="status">当前显示：第一张</p>
+      <img id="changing-image" class="page compact" src="/assets/page-one.svg" alt="可切换图片来源的测试页" width="720" height="960" />
+    </section>
+    <section><div class="section-title"><span>05</span><h2>读取失败</h2></div>
+      <p>故意不存在的资源，应显示失败或不可读取，不能当成有效图片。</p>
+      <img src="/assets/missing.svg" alt="预期加载失败的测试图片" width="320" height="100" />
+    </section>
+    <div class="scroll-gap">继续向下滚动，测试延迟加载与长图。</div>
+    <section id="lazy"><div class="section-title"><span>06</span><h2>懒加载与长图</h2></div>
+      <img class="page" src="/assets/long-page.svg" loading="lazy" alt="懒加载长图测试" width="720" height="2400" />
+      <button id="append-image" type="button">追加一张图片</button>
+      <div id="appended-images"></div>
+      <p id="append-status" role="status">尚未追加</p>
+    </section>
+  </main>
+  <footer>此页面只连接本机。未接入翻译 API，也不会上传图片。</footer>
+  <script src="/reader.js" defer></script>
+</body>
+</html>
