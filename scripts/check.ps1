@@ -10,7 +10,7 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Documentation or extension checks failed.' }
     & npm.cmd run test:fixtures
     if ($LASTEXITCODE -ne 0) { throw 'Fixture boundary checks failed.' }
-    & $pythonExe -m ruff check services tests/backend
+    & $pythonExe -m ruff check services tests/backend scripts
     if ($LASTEXITCODE -ne 0) { throw 'Python source checks failed.' }
     & $pythonExe -m pytest -q
     if ($LASTEXITCODE -ne 0) { throw 'API boundary tests failed.' }

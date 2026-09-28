@@ -17,6 +17,8 @@ function collect(relative) {
     return;
   }
   if (stat.isDirectory()) {
+    // Python experiments generate binary bytecode next to source; it is not authored text.
+    if (path.basename(relative) === '__pycache__') return;
     for (const name of fs.readdirSync(absolute)) collect(path.join(relative, name));
   } else {
     textFiles.push(relative);
