@@ -21,10 +21,12 @@ FONT = Path("C:/Windows/Fonts/msyh.ttc")  # Existing Windows font; never redistr
 
 
 class BubblePipeline:
-    def __init__(self):
+    def __init__(self, *, allow_network=False, output_root=OUTPUT, cache_file=None):
         self.detector = BubbleDetector()
         self.japanese = None
-        self.cache_file = OUTPUT / "translation-cache.json"
+        self.allow_network = allow_network
+        self.output_root = Path(output_root)
+        self.cache_file = Path(cache_file) if cache_file else OUTPUT / "translation-cache.json"
         self.cache = json.loads(self.cache_file.read_text(encoding="utf-8")) \
             if self.cache_file.exists() else {"entries": {}, "attempted_characters": 0}
 
@@ -37,6 +39,8 @@ class BubblePipeline:
         key = hashlib.sha256(f"mymemory-v1:{language}:zh-CN:{text}".encode()).hexdigest()
         if key in self.cache["entries"]:
             return self.cache["entries"][key], True
+        if not self.allow_network:
+            raise TranslationError("NETWORK_NOT_AUTHORIZED")
         if self.cache["attempted_characters"] + len(text) > 1000:
             raise TranslationError("LOCAL_BUDGET_EXCEEDED")
         self.cache["attempted_characters"] += len(text)
@@ -54,7 +58,7 @@ class BubblePipeline:
         if image.width * image.height > 25_000_000 or image.width > 2400 or image.height > 16000:
             raise ValueError("IMAGE_TOO_LARGE")
         image = image.convert("RGB")
-        folder = OUTPUT / sample_id
+        folder = self.output_root / sample_id
         folder.mkdir(parents=True, exist_ok=True)
         progress("正在自动检测气泡与文字")
         regions, detections, tiles = self.detector.detect(image)

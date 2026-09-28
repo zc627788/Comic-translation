@@ -1,0 +1,982 @@
+{
+  "frozen_manifest_sha256": "6ddc80d8cde464ad971acfc889ab3cfe585097c1b7623858a07cf80c7a3ee066",
+  "review_metadata_version": 1,
+  "korean_original_count": 0,
+  "independently_transcribed_real_pages": 0,
+  "samples": [
+    {
+      "id": "ja-bj-004",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "a29e23dd9744b94f11bdb9b93caec7668351ee7f2b0f4f679e736c2973da1d31",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 4,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "color"
+      ]
+    },
+    {
+      "id": "ja-bj-005",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "16ce4acc026937721523ac793ca67997b26e345d33fa2e1b9181db9978c512ee",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 5,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "color"
+      ]
+    },
+    {
+      "id": "ja-bj-006",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "8bdc6b7068d53b04a8b720b6055d912fec42411fb829301af59c0b6748ec0c97",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 6,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "color"
+      ]
+    },
+    {
+      "id": "ja-bj-007",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "1fc6d5cfa1b554d281867515ae12d4ae6233a934b07521e569ebbc7a2bbadb55",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 7,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "black_white"
+      ]
+    },
+    {
+      "id": "ja-bj-008",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "1fc43260c2475a2598d85b72b3f6e1ac8a74a280974baaeb24d6cbd295a4c51e",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 8,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "black_white"
+      ]
+    },
+    {
+      "id": "ja-bj-009",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "470e45ee55152831a8b290c61f14541b0858c5eca9c5f67b0bf52a7e6c04c2da",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 9,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "black_white"
+      ]
+    },
+    {
+      "id": "ja-bj-010",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "92ac313aa776e581f9ee14b48440f6d708f32bcb77bce4e2392665c3bdcd992f",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 10,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "black_white"
+      ]
+    },
+    {
+      "id": "ja-bj-011",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "a474d968088834f816594964343c07218f993cff6277ce2a9e2f18003d1bf550",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 11,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "black_white"
+      ]
+    },
+    {
+      "id": "ja-bj-012",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "40510965950779de2aa18ac85c91e9bafa28108a668dc15341f4e935d0000173",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 12,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "black_white"
+      ]
+    },
+    {
+      "id": "ja-bj-013",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "fe875dcf38ac1e9d25b6f1cdc938dd47367a86074fc3152bb7aa77abb7bd9d35",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 13,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "black_white"
+      ]
+    },
+    {
+      "id": "ja-bj-014",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "7611d058c54403929726b9d422de72fdb4b6a2e0f3222686622be211900762a8",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 14,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "black_white"
+      ]
+    },
+    {
+      "id": "ja-bj-015",
+      "language": "ja",
+      "family": "blackjack-volume1",
+      "kind": "japanese_original",
+      "split": "development",
+      "tags": [
+        "black_white",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "45afdcbbb157cb502beceb6deac7b00ee453d3288e5e3a28b7ca83e13d3f7525",
+      "size": [
+        990,
+        1400
+      ],
+      "source": "https://www.densho810.com/free/",
+      "credit": "ブラックジャックによろしく / 佐藤秀峰 / Give My Regards to Black Jack / SHUHO SATO",
+      "license_url": "https://www.densho810.com/free/",
+      "original_sha256": "a2ad133db82a21cefce1acccb5548de10d2d74118c1519d86ede8566b02ca8b4",
+      "transform": {
+        "pdf_file_page": 15,
+        "longest_edge": 1400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "real_page",
+        "black_white"
+      ]
+    },
+    {
+      "id": "ko-pc-ep01-1",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "1c1e5ba34317140c660c79c1cd21284575ffeb332d9581e72645a0ca3bf28e5d",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep01_Potion-of-Flight.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim; contributors: GunChleoc / Hồ Châu",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "acca163f28e7c33246bb675f8b38a27e24f3c62da76c5b96041dbcdc38b840da",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep01_Potion-of-Flight/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E01P01.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "ko-pc-ep01-2",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "9ef666b15f548f589c6de06f3d222d2cf25c0393e98efc5bf58c57228dbec7a6",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep01_Potion-of-Flight.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim; contributors: GunChleoc / Hồ Châu",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "5e484c4ccc7a9d89ab6229d06b29db05798fc29b49fe951e3de8cb863c7b15cf",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep01_Potion-of-Flight/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E01P02.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "ko-pc-ep01-3",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "510643324ab7673e087c0fe96a2accd8b6f6aebc4402735437f7f80018fef1ab",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep01_Potion-of-Flight.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim; contributors: GunChleoc / Hồ Châu",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "0b3e6f50893e49e97b3120da4a8fe5ef3807abeeb7920d763ff7b4f745de2d3a",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep01_Potion-of-Flight/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E01P03.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "ko-pc-ep02-1",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "74013c5610a6de5b159592ea5e91303c37db569d78b151f82addd7ed3851a573",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep02_Rainbow-potions.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "11028ef60a732ab7eef79a72af82dd666bd7a3166414971104eb312b68e98d68",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep02_Rainbow-potions/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E02P01.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "ko-pc-ep02-2",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "34d22f6e492f453271c728b0dd38e6b7017d25acdc2812aa727d444cb0b2275c",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep02_Rainbow-potions.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "dedb9e259049b5f3fb4da99ae7e9793946dbf148be9b719af66cd43d307619f7",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep02_Rainbow-potions/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E02P02.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "ko-pc-ep02-3",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "364d53c93f0fb17f7f58740c3fdc26a93f8a8ca70494eac61f305bed88866ad5",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep02_Rainbow-potions.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "2f2030c32160cf32e93fa198b80df9d163d6aefaafbb33e1955d774a2d445f61",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep02_Rainbow-potions/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E02P03.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "ko-pc-ep03-1",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "e3dcf3d2efb3d4191f09b4d17ef760ccc78d0a903f1051f543a34d90b1cac307",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep03_The-secret-ingredients.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "bde3019f61683fc63a2e67a0b25ae59763bdb42891c5cc53e4e3fe386600f56b",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep03_The-secret-ingredients/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E03P01.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "ko-pc-ep03-2",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "c454777c93ed3d11e9351cf64d28bc6b15717a94f9f4e5aa6cbeed2f7cabe968",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep03_The-secret-ingredients.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "8afc00121650735852110661013656b39aab01f2f6c41ab2a23481136d2d802c",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep03_The-secret-ingredients/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E03P02.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "ko-pc-ep03-3",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "88bf0651a8fb9f733f48a5d859b20600d8783fcc51d000e275673f748c1e32c0",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep03_The-secret-ingredients.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "212ea41e1dc57574cd32473e00c181016e8f0376bdfd1cf020726b8842bdf04f",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep03_The-secret-ingredients/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E03P03.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "ko-pc-ep04-1",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "b88faa53287efd3f5ec3a5914a61f546a201c59e8849a320d042573717bdab67",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep04_Stroke-of-genius.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "0c65818d0c98f790f8aff35092b8ecc5986ac35015062f71a6b531339df25580",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep04_Stroke-of-genius/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E04P01.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "ko-pc-ep04-2",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "7ca3b01b939ffe2f9bfa9fa56fdc8480f8782c3e214bfbc2b058eb46f0e660bb",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep04_Stroke-of-genius.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "12f2d5f2717bff44419ebc7d1122b03f3435b318465ed99b436dadbfe51c85e1",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep04_Stroke-of-genius/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E04P02.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "ko-pc-ep04-3",
+      "language": "ko",
+      "family": "peppercarrot",
+      "kind": "korean_translation",
+      "split": "development",
+      "tags": [
+        "color",
+        "real_page",
+        "tags_pending_visual_review"
+      ],
+      "sha256": "cefbe222e3f83a3dd9d1402e88dac4eb3431d0a2ec250d99317fa9f29c1667cd",
+      "size": [
+        2400,
+        3389
+      ],
+      "source": "https://www.peppercarrot.com/kr/webcomic/ep04_Stroke-of-genius.html",
+      "credit": "Pepper&Carrot / David Revoy; Korean: Shikamaru “initbar” Yamamoto; proofreading: Jihoon Kim",
+      "license_url": "https://www.peppercarrot.com/en/about/index.html#license",
+      "original_sha256": "d0541e302fb63cd318dcd278c6cb73674c86fbfa481ad77076528bd5c1aedaab",
+      "transform": {
+        "image_url": "https://www.peppercarrot.com/0_sources/ep04_Stroke-of-genius/hi-res/kr_Pepper-and-Carrot_by-David-Revoy_E04P03.jpg",
+        "original_size": [
+          2481,
+          3503
+        ],
+        "max_width": 2400
+      },
+      "annotation_status": "not_annotated",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "color",
+        "real_page"
+      ]
+    },
+    {
+      "id": "fx-ko-plain",
+      "language": "ko",
+      "family": "project-original-fixtures",
+      "kind": "synthetic",
+      "split": "development",
+      "tags": [
+        "white",
+        "irregular"
+      ],
+      "sha256": "368acf9d89963f4eec80efcc73905e9ca6c803912a5d17fb2963e5f662c8ed52",
+      "size": [
+        800,
+        900
+      ],
+      "source": "project-generated",
+      "credit": "Comic Translation original test fixture",
+      "license_url": null,
+      "original_sha256": null,
+      "transform": {
+        "generator": "quality-fixtures-v1",
+        "font_size": 32,
+        "font_sha256": "7a183cf1c6c56b9609fcc16eda8b5229fbc11758a21e669ec00343239b02192f"
+      },
+      "annotation_status": "generated_ground_truth",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "white",
+        "irregular"
+      ]
+    },
+    {
+      "id": "fx-ko-small",
+      "language": "ko",
+      "family": "project-original-fixtures",
+      "kind": "synthetic",
+      "split": "development",
+      "tags": [
+        "small_text",
+        "low_resolution"
+      ],
+      "sha256": "409b47645323e0cad2af9fd808cd5f42145e6a5ce167c5e9721d68a0e8bff734",
+      "size": [
+        800,
+        900
+      ],
+      "source": "project-generated",
+      "credit": "Comic Translation original test fixture",
+      "license_url": null,
+      "original_sha256": null,
+      "transform": {
+        "generator": "quality-fixtures-v1",
+        "font_size": 17,
+        "font_sha256": "7a183cf1c6c56b9609fcc16eda8b5229fbc11758a21e669ec00343239b02192f"
+      },
+      "annotation_status": "generated_ground_truth",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "small_text",
+        "low_resolution"
+      ]
+    },
+    {
+      "id": "fx-ko-dark",
+      "language": "ko",
+      "family": "project-original-fixtures",
+      "kind": "synthetic",
+      "split": "development",
+      "tags": [
+        "dark_bubble"
+      ],
+      "sha256": "6a529d436b562baba8cd2271faf139329b6b7ae2d23ffea1e8e797d483031d4a",
+      "size": [
+        800,
+        900
+      ],
+      "source": "project-generated",
+      "credit": "Comic Translation original test fixture",
+      "license_url": null,
+      "original_sha256": null,
+      "transform": {
+        "generator": "quality-fixtures-v1",
+        "font_size": 30,
+        "font_sha256": "7a183cf1c6c56b9609fcc16eda8b5229fbc11758a21e669ec00343239b02192f"
+      },
+      "annotation_status": "generated_ground_truth",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "dark_bubble"
+      ]
+    },
+    {
+      "id": "fx-ko-seam",
+      "language": "ko",
+      "family": "project-original-fixtures",
+      "kind": "synthetic",
+      "split": "development",
+      "tags": [
+        "long_strip",
+        "tile_seam"
+      ],
+      "sha256": "d16cb5995d0ab1bb40afb129aace1118e8bc8933081056a87b9608c09808ac54",
+      "size": [
+        800,
+        2900
+      ],
+      "source": "project-generated",
+      "credit": "Comic Translation original test fixture",
+      "license_url": null,
+      "original_sha256": null,
+      "transform": {
+        "generator": "quality-fixtures-v1",
+        "font_size": 30,
+        "font_sha256": "7a183cf1c6c56b9609fcc16eda8b5229fbc11758a21e669ec00343239b02192f"
+      },
+      "annotation_status": "generated_ground_truth",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "long_strip",
+        "tile_seam"
+      ]
+    },
+    {
+      "id": "fx-ja-ruby",
+      "language": "ja",
+      "family": "project-original-fixtures",
+      "kind": "synthetic",
+      "split": "development",
+      "tags": [
+        "vertical",
+        "furigana"
+      ],
+      "sha256": "fae5cc6199593c140cdbc8da72fe8c9f21cd8683544dac2d85aa4d13f918dc0b",
+      "size": [
+        800,
+        900
+      ],
+      "source": "project-generated",
+      "credit": "Comic Translation original test fixture",
+      "license_url": null,
+      "original_sha256": null,
+      "transform": {
+        "generator": "quality-fixtures-v1",
+        "font_size": 34,
+        "font_sha256": "cb2021bbfe40b21ec564848b8d702125661594e1b4f1eb2e77fd8a98b485cf19"
+      },
+      "annotation_status": "generated_ground_truth",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "vertical",
+        "furigana"
+      ]
+    },
+    {
+      "id": "fx-empty",
+      "language": "ko",
+      "family": "project-original-fixtures",
+      "kind": "synthetic",
+      "split": "development",
+      "tags": [
+        "blank_negative"
+      ],
+      "sha256": "d05bf80c7c066ffdbcfff026e850fd4898ce533ca83b40c33dfa0b0ad22b47a1",
+      "size": [
+        800,
+        900
+      ],
+      "source": "project-generated",
+      "credit": "Comic Translation original test fixture",
+      "license_url": null,
+      "original_sha256": null,
+      "transform": {
+        "generator": "quality-fixtures-v1",
+        "font_size": 30,
+        "font_sha256": "7a183cf1c6c56b9609fcc16eda8b5229fbc11758a21e669ec00343239b02192f"
+      },
+      "annotation_status": "generated_ground_truth",
+      "visual_review_scope": "contact sheet; not independent transcription",
+      "reviewed_tags": [
+        "blank_negative"
+      ]
+    }
+  ]
+}

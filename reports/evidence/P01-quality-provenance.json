@@ -1,0 +1,22 @@
+{
+  "captured_during_run": true,
+  "python": "3.12.10",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "onnxruntime": "1.30.0",
+    "opencv-python-headless": "5.0.0.93",
+    "pillow": "12.3.0"
+  },
+  "source_sha256": {
+    "services/worker/bubble_pipeline.py": "060dc0aba6d0b0c93061d50f3c94ffe2c289918e3e001a31184b3502a1afca4d",
+    "services/worker/bubble_vision.py": "abfbe1511914bffe6e0953417212354eabf0604e2e3512c39ac77a2276639048",
+    "services/worker/bubble_render.py": "6fc7df7a387db9467e6ff10b7d54b11f0de4294653425da1a00e1a6bd51012a2",
+    "services/worker/quality_metrics.py": "a45ab6d1250143a00c2b3c8b415c8413ff3a1f66072ba5abbc48c1d363202aef",
+    "services/worker/ocr_korean.mjs": "b920eacc5818c0627718c57a1450402014ea6b08f49f7c26558f57b01d1f9b5d",
+    "services/worker/translation.py": "9e1eefba44cf0657db049c321202d131e23bf2378900d22808f92fe3ac9367f9",
+    "scripts/run-quality-baseline.py": "fe2d93c8e9038fd6e60c72bfb81e7cf5ff8e83fe395b4e070bb1da899e1bab6c",
+    "models/bubble-lab.json": "0453b4ff52f707ae0be6c3243f6f4c31a74c72de18eed95f6169ad9fa0922859",
+    "uv.lock": "3e308b3f1c5359318c6680aba9acd30d936de726423215c147a659450afb3626",
+    "package-lock.json": "6e6438e79180f6bc1d0f968a5912df55b21fa4cbe68092c6374fc408ef5d4e33"
+  }
+}

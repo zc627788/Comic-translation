@@ -105,6 +105,7 @@ def test_korean_provider_receives_explicit_language_and_preserves_word_spaces(mo
 def test_translation_cache_separates_languages_and_budget_survives_failures(tmp_path, monkeypatch):
     # No detector or provider is loaded; this is a cache/limit contract test only.
     client = BubblePipeline.__new__(BubblePipeline)
+    client.allow_network = True
     client.cache_file = tmp_path / "cache.json"
     client.cache = {"entries": {}, "attempted_characters": 0}
     calls = []

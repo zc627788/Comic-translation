@@ -107,7 +107,7 @@ def execute(job_id, sample_id):
         from services.worker.bubble_pipeline import BubblePipeline
         if pipeline is None:
             progress("正在校验并载入本地模型")
-            pipeline = BubblePipeline()
+            pipeline = BubblePipeline(allow_network=True)
         sample = SAMPLES[sample_id]
         result = pipeline.process(sample["path"], job_id, sample["language"], progress)
         with lock:
