@@ -21,7 +21,12 @@ FONT = Path("C:/Windows/Fonts/msyh.ttc")  # Existing Windows font; never redistr
 
 
 class BubblePipeline:
-    def __init__(self, *, allow_network=False, output_root=OUTPUT, cache_file=None):
+    def __init__(self, *, allow_network=False, output_root=OUTPUT, cache_file=None,
+                 korean_ocr="tesseract"):
+        if korean_ocr not in {"tesseract", "paddle-v5"}:
+            raise ValueError("INVALID_KOREAN_OCR")
+        self.korean_ocr = korean_ocr
+        self.korean_model = None
         self.detector = BubbleDetector()
         self.japanese = None
         self.allow_network = allow_network
@@ -29,6 +34,18 @@ class BubblePipeline:
         self.cache_file = Path(cache_file) if cache_file else OUTPUT / "translation-cache.json"
         self.cache = json.loads(self.cache_file.read_text(encoding="utf-8")) \
             if self.cache_file.exists() else {"entries": {}, "attempted_characters": 0}
+
+    def read_paddle(self, image):
+        if self.korean_model is None:
+            from services.worker.korean_paddle import KoreanPaddleOcr
+            self.korean_model = KoreanPaddleOcr()
+        output = self.korean_model.read(image)
+        lines = output["lines"]
+        reason = None
+        if not lines or any(not line["text"].strip() for line in lines):
+            reason = "OCR_LINE_UNREADABLE"
+        confidence = min((line["confidence"] for line in lines), default=0.0) * 100
+        return {**output, "confidence": confidence, "reason": reason}
 
     def save_cache(self):
         temporary = self.cache_file.with_suffix(".partial")
@@ -77,7 +94,8 @@ class BubblePipeline:
                 crop = image.crop((max(0, x0 - 2), max(0, y0 - 2),
                                    min(image.width, x1 + 2), min(image.height, y1 + 2)))
                 path = folder / f"crop-{index}.png"
-                if language == "ko" and not prepared[index]["method"].startswith("white-"):
+                if (language == "ko" and self.korean_ocr == "tesseract"
+                        and not prepared[index]["method"].startswith("white-")):
                     # Separate dark text strokes from translucent artwork before OCR.
                     prep = prepared[index]
                     left, top, _, _ = prep["bounds"]
@@ -85,7 +103,7 @@ class BubblePipeline:
                         max(0, x0 - left - 4), max(0, y0 - top - 4),
                         min(prep["ink"].shape[1], x1 - left + 4),
                         min(prep["ink"].shape[0], y1 - top + 4)))
-                if language == "ko":
+                if language == "ko" and self.korean_ocr == "tesseract":
                     crop = crop.resize((crop.width * 3, crop.height * 3), Image.Resampling.LANCZOS)
                 crop.save(path)
                 crops.append((index, path))
@@ -94,15 +112,25 @@ class BubblePipeline:
         debug.save(folder / "detection.png")
         progress(f"正在识别{len(crops)}个气泡内的文字")
         if language == "ko" and crops:
-            manifest = folder / "crops.json"
-            manifest.write_text(json.dumps([str(path) for _, path in crops]), encoding="utf-8")
-            subprocess.run([shutil.which("node") or "node", "services/worker/ocr_korean.mjs",
-                            str(manifest), str(folder / "ocr.json")], cwd=ROOT,
-                           check=True, timeout=90, capture_output=True)
-            outputs = json.loads((folder / "ocr.json").read_text(encoding="utf-8"))
+            if self.korean_ocr == "paddle-v5":
+                outputs = []
+                for _, path in crops:
+                    with Image.open(path) as crop:
+                        outputs.append(self.read_paddle(crop))
+                (folder / "ocr.json").write_text(
+                    json.dumps(outputs, ensure_ascii=False, indent=2), encoding="utf-8")
+            else:
+                manifest = folder / "crops.json"
+                manifest.write_text(json.dumps([str(path) for _, path in crops]), encoding="utf-8")
+                subprocess.run([shutil.which("node") or "node", "services/worker/ocr_korean.mjs",
+                                str(manifest), str(folder / "ocr.json")], cwd=ROOT,
+                               check=True, timeout=90, capture_output=True)
+                outputs = json.loads((folder / "ocr.json").read_text(encoding="utf-8"))
             for (index, _), output in zip(crops, outputs, strict=True):
                 regions[index].update(source=output["text"], ocr_confidence=output["confidence"])
-                if output["confidence"] < 65 or re.search(r"[ㄱ-ㅣ]", output["text"]):
+                if output.get("reason"):
+                    regions[index].update(status="preserved", reason=output["reason"])
+                elif output["confidence"] < 65 or re.search(r"[ㄱ-ㅣ]", output["text"]):
                     regions[index].update(status="preserved", reason="LOW_OCR_CONFIDENCE")
         elif language == "ja" and crops:
             if self.japanese is None:
@@ -151,7 +179,7 @@ class BubblePipeline:
             "sample_id": sample_id, "language": language, "size": image.size,
             "source_sha256": hashlib.sha256(Path(source).read_bytes()).hexdigest(),
             "detector": "RT-DETR-v2-int8", "ocr": "manga-ocr-onnx-int8" if language == "ja"
-            else "tesseract.js-kor", "regions": regions, "tiles": tiles,
+            else self.korean_ocr, "regions": regions, "tiles": tiles,
             "text_free_count": sum(d["class"] == 2 for d in detections),
             "covered": sum(r["status"] == "covered" for r in regions),
             "preserved": sum(r["status"] != "covered" for r in regions),

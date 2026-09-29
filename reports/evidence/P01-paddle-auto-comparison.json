@@ -1,0 +1,471 @@
+{
+  "baseline": "guard-v2",
+  "candidate": "paddle-auto-v1",
+  "reference_sha256": "32705a626fabfe3cc95bf3dbee172b9d12f9a9139ca0831e32f7194fe49b8b0e",
+  "matching": "one-to-one IoU >= 0.5 association to padded reference crops; conditional OCR, NOT detector recall",
+  "runs": {
+    "guard-v2": {
+      "counts": {
+        "japanese_original": {
+          "images": 12,
+          "covered": 5,
+          "preserved": 51
+        },
+        "korean_translation": {
+          "images": 12,
+          "covered": 2,
+          "preserved": 37
+        },
+        "synthetic": {
+          "images": 6,
+          "covered": 0,
+          "preserved": 6
+        }
+      },
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 53,
+        "OPEN_BUBBLE_BOUNDARY": 33,
+        "TEXT_OUTSIDE_SAFE_ZONE": 3,
+        "LOW_OCR_CONFIDENCE": 4,
+        "DARK_OR_COMPLEX_BUBBLE": 1
+      },
+      "reference_subset": [
+        {
+          "id": "ko-pc-ep01-2-0",
+          "matched_box": [
+            1718,
+            281,
+            1879,
+            418
+          ],
+          "iou": 0.8237908496732026,
+          "characters": 8,
+          "errors": 6
+        },
+        {
+          "id": "ko-pc-ep01-2-1",
+          "matched_box": [
+            1214,
+            1270,
+            1499,
+            1419
+          ],
+          "iou": 0.9249601084176703,
+          "characters": 13,
+          "errors": 4
+        },
+        {
+          "id": "ko-pc-ep03-1-0",
+          "matched_box": [
+            300,
+            2100,
+            553,
+            2316
+          ],
+          "iou": 0.9703852788959172,
+          "characters": 21,
+          "errors": 8
+        },
+        {
+          "id": "ko-pc-ep03-1-1",
+          "matched_box": [
+            1135,
+            2104,
+            1357,
+            2242
+          ],
+          "iou": 0.888,
+          "characters": 16,
+          "errors": 6
+        },
+        {
+          "id": "ko-pc-ep03-1-2",
+          "matched_box": [
+            2076,
+            2394,
+            2219,
+            2469
+          ],
+          "iou": 0.7944444444444444,
+          "characters": 5,
+          "errors": 3
+        },
+        {
+          "id": "ko-pc-ep04-1-0",
+          "matched_box": [
+            484,
+            2151,
+            993,
+            2362
+          ],
+          "iou": 0.9737431433881862,
+          "characters": 40,
+          "errors": 6
+        },
+        {
+          "id": "ko-pc-ep04-1-1",
+          "matched_box": [
+            686,
+            2424,
+            952,
+            2613
+          ],
+          "iou": 0.8815124680827946,
+          "characters": 23,
+          "errors": 19
+        },
+        {
+          "id": "ko-pc-ep04-1-2",
+          "matched_box": [
+            1805,
+            2107,
+            2304,
+            2277
+          ],
+          "iou": 0.869612538093165,
+          "characters": 18,
+          "errors": 14
+        }
+      ],
+      "subset_errors": 66,
+      "subset_characters": 144,
+      "korean_diagnostics": [
+        {
+          "id": "ko-pc-ep01-1",
+          "regions": 2,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep01-2",
+          "regions": 2,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep01-3",
+          "regions": 1,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep02-1",
+          "regions": 0,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep02-2",
+          "regions": 0,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep02-3",
+          "regions": 0,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep03-1",
+          "regions": 3,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep03-2",
+          "regions": 10,
+          "empty_text_regions": 1,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep03-3",
+          "regions": 2,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep04-1",
+          "regions": 3,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep04-2",
+          "regions": 10,
+          "empty_text_regions": 1,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep04-3",
+          "regions": 6,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "fx-ko-plain",
+          "regions": 1,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "fx-ko-small",
+          "regions": 1,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "fx-ko-dark",
+          "regions": 1,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "fx-ko-seam",
+          "regions": 2,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "fx-empty",
+          "regions": 0,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        }
+      ]
+    },
+    "paddle-auto-v1": {
+      "counts": {
+        "japanese_original": {
+          "images": 12,
+          "covered": 5,
+          "preserved": 51
+        },
+        "korean_translation": {
+          "images": 12,
+          "covered": 0,
+          "preserved": 39
+        },
+        "synthetic": {
+          "images": 6,
+          "covered": 0,
+          "preserved": 6
+        }
+      },
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 58,
+        "OPEN_BUBBLE_BOUNDARY": 33,
+        "TEXT_OUTSIDE_SAFE_ZONE": 3,
+        "LOW_OCR_CONFIDENCE": 1,
+        "DARK_OR_COMPLEX_BUBBLE": 1
+      },
+      "reference_subset": [
+        {
+          "id": "ko-pc-ep01-2-0",
+          "matched_box": [
+            1718,
+            281,
+            1879,
+            418
+          ],
+          "iou": 0.8237908496732026,
+          "characters": 8,
+          "errors": 3
+        },
+        {
+          "id": "ko-pc-ep01-2-1",
+          "matched_box": [
+            1214,
+            1270,
+            1499,
+            1419
+          ],
+          "iou": 0.9249601084176703,
+          "characters": 13,
+          "errors": 0
+        },
+        {
+          "id": "ko-pc-ep03-1-0",
+          "matched_box": [
+            300,
+            2100,
+            553,
+            2316
+          ],
+          "iou": 0.9703852788959172,
+          "characters": 21,
+          "errors": 0
+        },
+        {
+          "id": "ko-pc-ep03-1-1",
+          "matched_box": [
+            1135,
+            2104,
+            1357,
+            2242
+          ],
+          "iou": 0.888,
+          "characters": 16,
+          "errors": 0
+        },
+        {
+          "id": "ko-pc-ep03-1-2",
+          "matched_box": [
+            2076,
+            2394,
+            2219,
+            2469
+          ],
+          "iou": 0.7944444444444444,
+          "characters": 5,
+          "errors": 3
+        },
+        {
+          "id": "ko-pc-ep04-1-0",
+          "matched_box": [
+            484,
+            2151,
+            993,
+            2362
+          ],
+          "iou": 0.9737431433881862,
+          "characters": 40,
+          "errors": 6
+        },
+        {
+          "id": "ko-pc-ep04-1-1",
+          "matched_box": [
+            686,
+            2424,
+            952,
+            2613
+          ],
+          "iou": 0.8815124680827946,
+          "characters": 23,
+          "errors": 5
+        },
+        {
+          "id": "ko-pc-ep04-1-2",
+          "matched_box": [
+            1805,
+            2107,
+            2304,
+            2277
+          ],
+          "iou": 0.869612538093165,
+          "characters": 18,
+          "errors": 1
+        }
+      ],
+      "subset_errors": 18,
+      "subset_characters": 144,
+      "korean_diagnostics": [
+        {
+          "id": "ko-pc-ep01-1",
+          "regions": 2,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep01-2",
+          "regions": 2,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep01-3",
+          "regions": 1,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep02-1",
+          "regions": 0,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep02-2",
+          "regions": 0,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep02-3",
+          "regions": 0,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep03-1",
+          "regions": 3,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep03-2",
+          "regions": 10,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep03-3",
+          "regions": 2,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep04-1",
+          "regions": 3,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep04-2",
+          "regions": 10,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "ko-pc-ep04-3",
+          "regions": 6,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "fx-ko-plain",
+          "regions": 1,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "fx-ko-small",
+          "regions": 1,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "fx-ko-dark",
+          "regions": 1,
+          "empty_text_regions": 1,
+          "empty_line_warnings": 1
+        },
+        {
+          "id": "fx-ko-seam",
+          "regions": 2,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        },
+        {
+          "id": "fx-empty",
+          "regions": 0,
+          "empty_text_regions": 0,
+          "empty_line_warnings": 0
+        }
+      ]
+    }
+  },
+  "changed_output_images": [
+    "ko-pc-ep01-1"
+  ]
+}

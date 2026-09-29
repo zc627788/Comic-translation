@@ -1,0 +1,584 @@
+{
+  "corpus_sha256": "6ddc80d8cde464ad971acfc889ab3cfe585097c1b7623858a07cf80c7a3ee066",
+  "run_id": "paddle-auto-v1",
+  "korean_ocr": "paddle-v5",
+  "source_sha256": {
+    "services/worker/bubble_pipeline.py": "6c991732ecec88a1d6a19daa13f779ea8f060776f6309378e2b9eb91195fb8dc",
+    "services/worker/korean_paddle.py": "54191a8acf8c3be483ae818d60a2329470d4120283dbdcfa6d1a2938a3769fab",
+    "scripts/run-quality-baseline.py": "deba2347dfb7aa68525afbfa2b83a9b803d315bb7f621790c17152989af9f431"
+  },
+  "mode": "cache-only",
+  "python": "3.12.10",
+  "platform": "Windows",
+  "code_base_commit": "97ce1d990e260311ddbbeb2ffe7ad047a3e212a6",
+  "working_tree_dirty": true,
+  "elapsed_ms": 138268,
+  "translation_cache_unchanged": true,
+  "results": [
+    {
+      "id": "ja-bj-004",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 1,
+      "detected_dialogues": 1,
+      "pipeline_ms": 1662,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 1
+      }
+    },
+    {
+      "id": "ja-bj-005",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 0,
+      "detected_dialogues": 0,
+      "pipeline_ms": 1117,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {}
+    },
+    {
+      "id": "ja-bj-006",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 2,
+      "detected_dialogues": 2,
+      "pipeline_ms": 1684,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 2
+      }
+    },
+    {
+      "id": "ja-bj-007",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 5,
+      "preserved": 1,
+      "detected_dialogues": 6,
+      "pipeline_ms": 2293,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 5,
+      "reasons": {
+        "OPEN_BUBBLE_BOUNDARY": 1
+      }
+    },
+    {
+      "id": "ja-bj-008",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 3,
+      "detected_dialogues": 3,
+      "pipeline_ms": 1856,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 3
+      }
+    },
+    {
+      "id": "ja-bj-009",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 8,
+      "detected_dialogues": 8,
+      "pipeline_ms": 3192,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 8
+      }
+    },
+    {
+      "id": "ja-bj-010",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 7,
+      "detected_dialogues": 7,
+      "pipeline_ms": 2829,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 7
+      }
+    },
+    {
+      "id": "ja-bj-011",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 5,
+      "detected_dialogues": 5,
+      "pipeline_ms": 2489,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 5
+      }
+    },
+    {
+      "id": "ja-bj-012",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 7,
+      "detected_dialogues": 7,
+      "pipeline_ms": 4275,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 5,
+        "OPEN_BUBBLE_BOUNDARY": 2
+      }
+    },
+    {
+      "id": "ja-bj-013",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 6,
+      "detected_dialogues": 6,
+      "pipeline_ms": 3964,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 6
+      }
+    },
+    {
+      "id": "ja-bj-014",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 9,
+      "detected_dialogues": 9,
+      "pipeline_ms": 4072,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 6,
+        "TEXT_OUTSIDE_SAFE_ZONE": 3
+      }
+    },
+    {
+      "id": "ja-bj-015",
+      "kind": "japanese_original",
+      "language": "ja",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 2,
+      "detected_dialogues": 2,
+      "pipeline_ms": 1886,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 2
+      }
+    },
+    {
+      "id": "ko-pc-ep01-1",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 2,
+      "detected_dialogues": 2,
+      "pipeline_ms": 4130,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 2
+      }
+    },
+    {
+      "id": "ko-pc-ep01-2",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 2,
+      "detected_dialogues": 2,
+      "pipeline_ms": 4323,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 2
+      }
+    },
+    {
+      "id": "ko-pc-ep01-3",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 1,
+      "detected_dialogues": 1,
+      "pipeline_ms": 3806,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 1
+      }
+    },
+    {
+      "id": "ko-pc-ep02-1",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 0,
+      "detected_dialogues": 0,
+      "pipeline_ms": 3331,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {}
+    },
+    {
+      "id": "ko-pc-ep02-2",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 0,
+      "detected_dialogues": 0,
+      "pipeline_ms": 3554,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {}
+    },
+    {
+      "id": "ko-pc-ep02-3",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 0,
+      "detected_dialogues": 0,
+      "pipeline_ms": 3517,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {}
+    },
+    {
+      "id": "ko-pc-ep03-1",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 3,
+      "detected_dialogues": 3,
+      "pipeline_ms": 4414,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "OPEN_BUBBLE_BOUNDARY": 2,
+        "NETWORK_NOT_AUTHORIZED": 1
+      }
+    },
+    {
+      "id": "ko-pc-ep03-2",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 10,
+      "detected_dialogues": 10,
+      "pipeline_ms": 4386,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "OPEN_BUBBLE_BOUNDARY": 9,
+        "LOW_OCR_CONFIDENCE": 1
+      }
+    },
+    {
+      "id": "ko-pc-ep03-3",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 2,
+      "detected_dialogues": 2,
+      "pipeline_ms": 3733,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "OPEN_BUBBLE_BOUNDARY": 2
+      }
+    },
+    {
+      "id": "ko-pc-ep04-1",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 3,
+      "detected_dialogues": 3,
+      "pipeline_ms": 3931,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "OPEN_BUBBLE_BOUNDARY": 3
+      }
+    },
+    {
+      "id": "ko-pc-ep04-2",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 10,
+      "detected_dialogues": 10,
+      "pipeline_ms": 3609,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "OPEN_BUBBLE_BOUNDARY": 8,
+        "NETWORK_NOT_AUTHORIZED": 2
+      }
+    },
+    {
+      "id": "ko-pc-ep04-3",
+      "kind": "korean_translation",
+      "language": "ko",
+      "gold_metrics": null,
+      "state": "completed",
+      "covered": 0,
+      "preserved": 6,
+      "detected_dialogues": 6,
+      "pipeline_ms": 3260,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "OPEN_BUBBLE_BOUNDARY": 6
+      }
+    },
+    {
+      "id": "fx-ko-plain",
+      "kind": "synthetic",
+      "language": "ko",
+      "gold_metrics": {
+        "truth_regions": 1,
+        "matched_regions": 1,
+        "missed_regions": 0,
+        "unmatched_predictions": 0,
+        "reference_characters": 18,
+        "edit_errors": 0,
+        "matched_reference_characters": 18,
+        "matched_edit_errors": 0,
+        "no_space_reference_characters": 15,
+        "no_space_edit_errors": 0,
+        "detection_recall": 1.0,
+        "end_to_end_cer": 0.0,
+        "conditional_cer": 0.0,
+        "end_to_end_cer_without_spaces": 0.0
+      },
+      "state": "completed",
+      "covered": 0,
+      "preserved": 1,
+      "detected_dialogues": 1,
+      "pipeline_ms": 1122,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 1
+      }
+    },
+    {
+      "id": "fx-ko-small",
+      "kind": "synthetic",
+      "language": "ko",
+      "gold_metrics": {
+        "truth_regions": 1,
+        "matched_regions": 1,
+        "missed_regions": 0,
+        "unmatched_predictions": 0,
+        "reference_characters": 32,
+        "edit_errors": 2,
+        "matched_reference_characters": 32,
+        "matched_edit_errors": 2,
+        "no_space_reference_characters": 24,
+        "no_space_edit_errors": 2,
+        "detection_recall": 1.0,
+        "end_to_end_cer": 0.0625,
+        "conditional_cer": 0.0625,
+        "end_to_end_cer_without_spaces": 0.08333333333333333
+      },
+      "state": "completed",
+      "covered": 0,
+      "preserved": 1,
+      "detected_dialogues": 1,
+      "pipeline_ms": 1016,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 1
+      }
+    },
+    {
+      "id": "fx-ko-dark",
+      "kind": "synthetic",
+      "language": "ko",
+      "gold_metrics": {
+        "truth_regions": 1,
+        "matched_regions": 1,
+        "missed_regions": 0,
+        "unmatched_predictions": 0,
+        "reference_characters": 23,
+        "edit_errors": 23,
+        "matched_reference_characters": 23,
+        "matched_edit_errors": 23,
+        "no_space_reference_characters": 18,
+        "no_space_edit_errors": 18,
+        "detection_recall": 1.0,
+        "end_to_end_cer": 1.0,
+        "conditional_cer": 1.0,
+        "end_to_end_cer_without_spaces": 1.0
+      },
+      "state": "completed",
+      "covered": 0,
+      "preserved": 1,
+      "detected_dialogues": 1,
+      "pipeline_ms": 849,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "DARK_OR_COMPLEX_BUBBLE": 1
+      }
+    },
+    {
+      "id": "fx-ko-seam",
+      "kind": "synthetic",
+      "language": "ko",
+      "gold_metrics": {
+        "truth_regions": 2,
+        "matched_regions": 2,
+        "missed_regions": 0,
+        "unmatched_predictions": 0,
+        "reference_characters": 43,
+        "edit_errors": 0,
+        "matched_reference_characters": 43,
+        "matched_edit_errors": 0,
+        "no_space_reference_characters": 34,
+        "no_space_edit_errors": 0,
+        "detection_recall": 1.0,
+        "end_to_end_cer": 0.0,
+        "conditional_cer": 0.0,
+        "end_to_end_cer_without_spaces": 0.0
+      },
+      "state": "completed",
+      "covered": 0,
+      "preserved": 2,
+      "detected_dialogues": 2,
+      "pipeline_ms": 2463,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 2
+      }
+    },
+    {
+      "id": "fx-ja-ruby",
+      "kind": "synthetic",
+      "language": "ja",
+      "gold_metrics": {
+        "truth_regions": 1,
+        "matched_regions": 1,
+        "missed_regions": 0,
+        "unmatched_predictions": 0,
+        "reference_characters": 10,
+        "edit_errors": 0,
+        "matched_reference_characters": 10,
+        "matched_edit_errors": 0,
+        "no_space_reference_characters": 10,
+        "no_space_edit_errors": 0,
+        "detection_recall": 1.0,
+        "end_to_end_cer": 0.0,
+        "conditional_cer": 0.0,
+        "end_to_end_cer_without_spaces": 0.0
+      },
+      "state": "completed",
+      "covered": 0,
+      "preserved": 1,
+      "detected_dialogues": 1,
+      "pipeline_ms": 1101,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {
+        "NETWORK_NOT_AUTHORIZED": 1
+      }
+    },
+    {
+      "id": "fx-empty",
+      "kind": "synthetic",
+      "language": "ko",
+      "gold_metrics": {
+        "truth_regions": 0,
+        "matched_regions": 0,
+        "missed_regions": 0,
+        "unmatched_predictions": 0,
+        "reference_characters": 0,
+        "edit_errors": 0,
+        "matched_reference_characters": 0,
+        "matched_edit_errors": 0,
+        "no_space_reference_characters": 0,
+        "no_space_edit_errors": 0,
+        "detection_recall": null,
+        "end_to_end_cer": null,
+        "conditional_cer": null,
+        "end_to_end_cer_without_spaces": null
+      },
+      "state": "completed",
+      "covered": 0,
+      "preserved": 0,
+      "detected_dialogues": 0,
+      "pipeline_ms": 855,
+      "outside_safe_modified_pixels": 0,
+      "cache_hits": 0,
+      "reasons": {}
+    }
+  ]
+}

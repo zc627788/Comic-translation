@@ -17,7 +17,7 @@
 
 ## 当前可执行动作
 
-**可以继续 P01：将 Paddle 韩文模型作为可选实验候选接入自动裁图，扩样验证后再决定默认。** 最新 [新模型与官方源复核报告](../reports/P01-korean-models.md) 已实跑：8 处新版参考上 Paddle 自动分行 CER 17/144，旧 Tesseract 最佳 47/144；两处转录已纠正、一处补齐，仍无人工签字。 最新 [韩文配置比较报告](../reports/P01-korean-ocr-comparison.md) 完成 3 页暂定视觉转录、四配置实测与完整保护环修复；30 图回归覆盖数仍为 7，未选出新 OCR 默认。 最新交接见 [30 图固定基线报告](../reports/P01-quality-baseline.md)；已跑完检测/OCR，未完成 30 图全部翻译，P01 仍 HOLD。 已完成 [日文与韩文气泡覆盖实验](../reports/P01-bubble-overlay.md)，其完整总结接收上轮免费实验。先按 [覆盖阅读器说明](bubble-overlay-experiment.md) 复查结果，再扩充授权样本与继续 T008/T009。
+**可以继续 P01：修复候选深底白字回退，再做受预算约束的真实翻译覆盖验证。** 最新 [自动裁图 30 图报告](../reports/P01-paddle-auto-crop.md)：可选候选已接入，30/30 实跑；八处自动框 CER 从 66/144 降至 18/144，但深底夹具为空。缓存覆盖 5 处，默认未改。 最新 [新模型与官方源复核报告](../reports/P01-korean-models.md) 已实跑：8 处新版参考上 Paddle 自动分行 CER 17/144，旧 Tesseract 最佳 47/144；两处转录已纠正、一处补齐，仍无人工签字。 最新 [韩文配置比较报告](../reports/P01-korean-ocr-comparison.md) 完成 3 页暂定视觉转录、四配置实测与完整保护环修复；30 图回归覆盖数仍为 7，未选出新 OCR 默认。 最新交接见 [30 图固定基线报告](../reports/P01-quality-baseline.md)；已跑完检测/OCR，未完成 30 图全部翻译，P01 仍 HOLD。 已完成 [日文与韩文气泡覆盖实验](../reports/P01-bubble-overlay.md)，其完整总结接收上轮免费实验。先按 [覆盖阅读器说明](bubble-overlay-experiment.md) 复查结果，再扩充授权样本与继续 T008/T009。
 
 用户后续已授权接入免费 API 并选真实网站验证，替代之前“暂不接 API”的临时选择。已完成 [免费接口小样本实验](../reports/P01-free-api-probe.md)：MyMemory 真实请求可用，轻量整页 OCR 失败，人工框选后两条短句可读，仍有漏字和误译。未执行付费请求。**不可以进入 P02**。
 

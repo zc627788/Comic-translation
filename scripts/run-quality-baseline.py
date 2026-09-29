@@ -36,19 +36,28 @@ def diagnose(pipeline, image, language, folder):
         crop = image.crop((max(0, x0 - 2), max(0, y0 - 2),
                            min(image.width, x1 + 2), min(image.height, y1 + 2)))
         path = folder / f"diagnostic-{index}.png"
-        if language == "ko":
+        if language == "ko" and pipeline.korean_ocr == "tesseract":
             crop = crop.resize((crop.width * 3, crop.height * 3), Image.Resampling.LANCZOS)
         crop.save(path)
         files.append(str(path))
         rows.append({"box": box, "text": "", "status": "pending"})
     if language == "ko" and rows:
-        write_json(folder / "diagnostic-crops.json", files)
-        subprocess.run([shutil.which("node") or "node", "services/worker/ocr_korean.mjs",
-                        str(folder / "diagnostic-crops.json"), str(folder / "diagnostic-ocr.json")],
-                       cwd=ROOT, check=True, timeout=120, capture_output=True)
-        outputs = read_json(folder / "diagnostic-ocr.json")
+        if pipeline.korean_ocr == "paddle-v5":
+            outputs = []
+            for file in files:
+                with Image.open(file) as crop:
+                    outputs.append(pipeline.read_paddle(crop))
+            write_json(folder / "diagnostic-ocr.json", outputs)
+        else:
+            write_json(folder / "diagnostic-crops.json", files)
+            subprocess.run([shutil.which("node") or "node", "services/worker/ocr_korean.mjs",
+                            str(folder / "diagnostic-crops.json"),
+                            str(folder / "diagnostic-ocr.json")],
+                           cwd=ROOT, check=True, timeout=120, capture_output=True)
+            outputs = read_json(folder / "diagnostic-ocr.json")
         for row, output in zip(rows, outputs, strict=True):
-            row.update(text=output["text"], confidence=output["confidence"], status="recognized")
+            row.update(text=output["text"], confidence=output["confidence"],
+                       status="recognized", line_warning=output.get("reason"))
     elif rows:
         if pipeline.japanese is None:
             pipeline.japanese = MangaOcr()
@@ -57,7 +66,7 @@ def diagnose(pipeline, image, language, folder):
                 row.update(text=pipeline.japanese.read(Image.open(file)), status="recognized")
             except ValueError as exc:
                 row.update(status="failed", reason=str(exc))
-    return {"preprocessing": "raw-crop-plus-2px; ko-Lanczos-3x; no erasure gate",
+    return {"preprocessing": f"raw-crop-plus-2px; ko={pipeline.korean_ocr}; no erasure gate",
             "regions": rows, "elapsed_ms": round((time.perf_counter() - started) * 1000)}
 
 
@@ -91,7 +100,8 @@ li{white-space:pre-wrap}pre{overflow:auto}h1{font-size:30px}p{line-height:1.8}
 </style><h1>固定 30 图 · 质量基线</h1>
 <p>12 页日漫 / 12 页韩文译版 / 6 张原创夹具。默认离线，无新翻译请求。
 真实页尚未独立标注，不能计算准确率。韩国原创韩漫样本仍缺。原图和完整 OCR 仅在本机。</p>
-""" + "".join(sections) + "</html>"
+""" + "<p>本次配置：" + html.escape(manifest.get("run_label", "legacy")) + "</p>" \
+        + "".join(sections) + "</html>"
     (run_root / "review.html").write_text(document, encoding="utf-8")
 
 
@@ -100,6 +110,7 @@ def main():
     parser.add_argument("--corpus", type=Path, default=ROOT / "artifacts/private/quality-v1")
     parser.add_argument("--allow-network", action="store_true")
     parser.add_argument("--run-id", default="baseline-v1")
+    parser.add_argument("--korean-ocr", choices=["tesseract", "paddle-v5"], default="tesseract")
     args = parser.parse_args()
     if not args.run_id.replace("-", "").isalnum():
         parser.error("Use an alphanumeric run ID")
@@ -122,7 +133,8 @@ def main():
     cache_path = OUTPUT / "translation-cache.json"
     cache_before = cache_path.read_bytes() if cache_path.exists() else b""
     started = time.perf_counter()
-    pipeline = BubblePipeline(allow_network=args.allow_network, output_root=run_root)
+    pipeline = BubblePipeline(allow_network=args.allow_network, output_root=run_root,
+                              korean_ocr=args.korean_ocr)
     rows = []
     for sample in samples:
         sid = sample["id"]
@@ -153,7 +165,11 @@ def main():
         raise ValueError("OFFLINE_RUN_CHANGED_TRANSLATION_CACHE")
     public_rows = [{k: v for k, v in row.items() if k != "diagnostics"} for row in rows]
     summary = {"corpus_sha256": hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
-               "run_id": args.run_id,
+               "run_id": args.run_id, "korean_ocr": args.korean_ocr,
+               "source_sha256": {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
+                                 for name in ["services/worker/bubble_pipeline.py",
+                                              "services/worker/korean_paddle.py",
+                                              "scripts/run-quality-baseline.py"]},
                "mode": "network-enabled" if args.allow_network else "cache-only",
                "python": platform.python_version(), "platform": platform.system(),
                "code_base_commit": subprocess.check_output(["git", "rev-parse", "HEAD"],
@@ -164,6 +180,7 @@ def main():
                "translation_cache_unchanged": cache_before == after,
                "results": public_rows}
     write_json(run_root / "summary.json", summary)
+    manifest["run_label"] = f"{args.run_id} / {args.korean_ocr} / {summary['mode']}"
     render_review(manifest, rows, run_root)
     print("COMPLETE", len(rows), "inputs; elapsed_ms", summary["elapsed_ms"], flush=True)
 

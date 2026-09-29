@@ -74,3 +74,7 @@
 ## DEC-018：官方源复核与新的韩文模型
 
 按 docs/korean-model-comparison-plan.md 对冻结裁图采用官方 SVG 文本交叉核对并建立标注 v2；比较官方 Korean PP-OCRv5 ONNX 与现有 Tesseract。行切分不使用答案，所有旧候选以新参考重算。研究实跑不自动改变默认模型。
+
+## DEC-019：可选 Paddle 自动裁图实验
+
+按 docs/paddle-auto-crop-plan.md 增加显式模型选择，保留默认、安全擦字和缓存边界；完整 30 图实跑并与 guard-v2 对照，候选置信门槛不冒充校准准确率。
