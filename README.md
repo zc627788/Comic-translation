@@ -52,3 +52,5 @@ npm run fixtures
 最新 [新韩文模型与官方源复核](reports/P01-korean-models.md)：修正参考后，同一 8 处裁图上 Paddle 自动分行 17/144 字符错误，旧模型最佳 47/144。默认未切换；先扩大自动裁图验证。
 
 最新 [Paddle 自动裁图完整 30 图实验](reports/P01-paddle-auto-crop.md)：通过 `--korean-ocr paddle-v5` 选择候选，默认不变。已发现并记录深底白字回退，仍在 P01。
+
+最新 [深底白字修复与真实翻译覆盖](reports/P01-dark-and-live.md)：30 图回归仅深底识别改善，六图真实翻译覆盖 9/11，仍需校对，未切默认或放行 P02。

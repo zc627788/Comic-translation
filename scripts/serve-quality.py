@@ -12,6 +12,13 @@ ROOT = Path(__file__).resolve().parents[1]
 def make_handler(corpus, run_id):
     manifest = json.loads((corpus / "manifest.json").read_text(encoding="utf-8"))
     files = {"/": (corpus / "runs" / run_id / "review.html", "text/html; charset=utf-8")}
+    live = corpus.parent / "paddle-live-v1"
+    if (live / "review.html").is_file():
+        files["/live"] = (live / "review.html", "text/html; charset=utf-8")
+        for row in json.loads((live / "summary.json").read_text("utf-8"))["results"]:
+            sid = row["sample_id"]
+            for name in ("original.png", "translated.png"):
+                files[f"/live/{sid}/{name}"] = (live / sid / name, "image/png")
     comparison = corpus.parent / "korean-comparison-v1" / "comparison-v1"
     if (comparison / "review.html").is_file():
         files["/ocr"] = (comparison / "review.html", "text/html; charset=utf-8")

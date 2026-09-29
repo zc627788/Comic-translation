@@ -9,6 +9,7 @@ import cv2
 import numpy as np
 import onnxruntime as ort
 import yaml
+from PIL import ImageOps
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -24,6 +25,19 @@ def decode_ctc(probabilities, characters):
             scores.append(float(probabilities[index, token]))
         previous = token
     return ''.join(text), float(np.mean(scores)) if scores else 0.0
+
+
+def normalize_polarity(image):
+    """Invert only an OCR copy when dark surroundings contain sparse bright strokes."""
+    image = image.convert('RGB')
+    gray = np.asarray(image.convert('L'))
+    border = np.concatenate((gray[0], gray[-1], gray[:, 0], gray[:, -1]))
+    bright_fraction = float(np.mean(gray > 180))
+    inverted = (float(np.mean(border < 100)) >= .8
+                and float(np.mean(gray < 100)) >= .6
+                and .005 <= bright_fraction <= .35
+                and float(np.percentile(gray, 99)) - float(np.median(gray)) > 100)
+    return (ImageOps.invert(image) if inverted else image), inverted
 
 
 def line_boxes(image):
@@ -92,6 +106,7 @@ class KoreanPaddleOcr:
             raise ValueError("MODEL_DICTIONARY_MISMATCH")
 
     def read(self, image, *, split_lines=True):
+        image, inverted = normalize_polarity(image)
         boxes = line_boxes(image) if split_lines else [[0, 0, image.width, image.height]]
         lines = []
         for box in boxes:
@@ -100,4 +115,5 @@ class KoreanPaddleOcr:
             text, confidence = decode_ctc(output, self.characters)
             lines.append({'box': box, 'text': text, 'confidence': confidence})
         return {'text': ' '.join(row['text'] for row in lines).strip(), 'lines': lines,
+                'polarity_inverted': inverted,
                 'status': 'recognized' if lines else 'NO_LINE_PROPOSALS'}

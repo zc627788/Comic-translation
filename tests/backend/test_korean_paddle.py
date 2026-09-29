@@ -5,7 +5,7 @@ import pytest
 from PIL import Image, ImageDraw
 
 from services.worker import korean_paddle
-from services.worker.korean_paddle import decode_ctc, line_boxes, prepare_line
+from services.worker.korean_paddle import decode_ctc, line_boxes, normalize_polarity, prepare_line
 
 
 def test_ctc_blank_separates_repeated_letters_and_checks_dictionary():
@@ -47,3 +47,22 @@ def test_changed_weight_is_rejected_before_onnx_load(tmp_path, monkeypatch):
     monkeypatch.setattr(korean_paddle, 'ROOT', tmp_path)
     with pytest.raises(ValueError, match='MODEL_HASH_MISMATCH'):
         korean_paddle.KoreanPaddleOcr()
+
+
+def test_dark_bright_strokes_are_normalized_without_mutating_source():
+    image = Image.new('RGB', (240, 160), '#202020')
+    draw = ImageDraw.Draw(image)
+    draw.rectangle((35, 25, 160, 45), fill='white')
+    draw.rectangle((55, 95, 190, 115), fill='white')
+    before = image.tobytes()
+    normalized, inverted = normalize_polarity(image)
+    assert inverted and len(line_boxes(normalized)) == 2
+    assert image.tobytes() == before
+    assert not normalize_polarity(normalized)[1]
+
+
+@pytest.mark.parametrize('color', ['#202020', 'white', '#cceedd'])
+def test_uniform_or_pale_background_is_not_inverted(color):
+    image = Image.new('RGB', (100, 100), color)
+    normalized, inverted = normalize_polarity(image)
+    assert not inverted and normalized.tobytes() == image.tobytes()

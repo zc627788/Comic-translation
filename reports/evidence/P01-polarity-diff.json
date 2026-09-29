@@ -1,0 +1,14 @@
+{
+  "baseline": "paddle-auto-v1",
+  "candidate": "paddle-polarity-v1",
+  "changed_diagnostic_pages": [
+    "fx-ko-dark"
+  ],
+  "inverted_regions": [
+    {
+      "id": "fx-ko-dark",
+      "region": 0
+    }
+  ],
+  "output_png_all_unchanged": true
+}
