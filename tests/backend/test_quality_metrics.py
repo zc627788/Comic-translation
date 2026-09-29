@@ -67,4 +67,5 @@ def test_cache_only_never_calls_provider_or_changes_budget(tmp_path, monkeypatch
     assert client.cache_file.read_bytes() == before
     key = hashlib.sha256("mymemory-v1:ko:zh-CN:기다려 주세요".encode()).hexdigest()
     client.cache["entries"][key] = {"text": "test-only cached payload"}
+    client.save_cache()
     assert client.translate("기다려 주세요", "ko")[1] is True

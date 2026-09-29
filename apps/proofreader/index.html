@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>漫画校对 · 逐气泡编辑</title><link rel="stylesheet" href="/assets/reader.css"></head>
+<body>
+<header><div><span class="eyebrow">COMIC TRANSLATION / 本地实验</span><h1>让每一句对白，更贴近故事</h1>
+<p>对照原图修改译文，保存后自动重排。机器翻译与编辑结果都需要语言复核。</p></div>
+<label>选择页面 <select id="sample" aria-label="选择页面"></select></label></header>
+<nav><span id="version"></span><button id="restore">恢复本页机器结果</button>
+<a id="export" href="#" download>导出当前 PNG</a><button id="reload">重新加载</button></nav>
+<p id="notice" role="status" aria-live="polite">正在读取本地实验结果…</p>
+<main><section class="visual"><h2>当前气泡 · 原文与重排预览</h2>
+<div class="crops"><figure><canvas id="originalCrop" aria-label="当前气泡原图"></canvas><figcaption>原图</figcaption></figure>
+<figure><canvas id="translatedCrop" aria-label="当前气泡重排"></canvas><figcaption>当前保存结果</figcaption></figure></div>
+<h2>整页对照 <small>点击右侧气泡卡片定位</small></h2><div class="pages">
+<figure><img id="original" alt="不可变原图"><figcaption>原图</figcaption></figure>
+<figure><img id="translated" alt="当前重排图片"><figcaption>当前译图</figcaption></figure></div></section>
+<aside><h2>逐气泡校对</h2><p>先校正原文，再试上下文候选。未保存的修改不会发送。</p>
+<div id="bubbles"></div><section class="context"><h2>同页上下文实验</h2>
+<p>按当前检测顺序提交下方文字至 MyMemory 免费接口，不上传图片。可能误译或丢失编号；候选不会自动覆盖。局部识别、漏检和阅读顺序错误仍会影响语义。</p>
+<details><summary>查看本次发送的原文</summary><pre id="payload"></pre></details>
+<button id="context">获取同页翻译候选</button><div id="candidates"></div></section></aside></main>
+<footer>独立 P01 实验 · 深色与开放边界仍有保留 · 尚未接入正式插件</footer>
+<script src="/assets/reader.js"></script></body></html>

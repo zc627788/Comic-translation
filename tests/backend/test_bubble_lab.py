@@ -126,6 +126,7 @@ def test_translation_cache_separates_languages_and_budget_survives_failures(tmp_
     assert client.translate("same", "ko")[1] is False
     assert calls == ["ja", "ko"] and client.cache["attempted_characters"] == 8
     client.cache["attempted_characters"] = 1000
+    client.save_cache()
     with pytest.raises(TranslationError, match="LOCAL_BUDGET_EXCEEDED"):
         client.translate("new", "ko")
     assert len(calls) == 2

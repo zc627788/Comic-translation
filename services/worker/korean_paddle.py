@@ -7,7 +7,6 @@ from pathlib import Path
 
 import cv2
 import numpy as np
-import onnxruntime as ort
 import yaml
 from PIL import ImageOps
 
@@ -92,6 +91,8 @@ class KoreanPaddleOcr:
             if hashlib.sha256(path.read_bytes()).hexdigest() != file['sha256']:
                 raise ValueError("MODEL_HASH_MISMATCH")
             paths.append(path)
+        import onnxruntime as ort
+
         config_path = next(p for p in paths if p.suffix == '.yml')
         config = yaml.safe_load(config_path.read_text('utf-8'))
         self.characters = [''] + config['PostProcess']['character_dict'] + [' ']

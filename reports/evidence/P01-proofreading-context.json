@@ -1,0 +1,73 @@
+{
+  "kind": "REAL_CONTEXT_AND_PERSISTED_EDITS",
+  "sample_id": "ko-pc-ep03-1",
+  "contexts": [
+    {
+      "revision": 3,
+      "cached": true,
+      "source_characters": 59,
+      "source_utf8_bytes": 109,
+      "source_sha256": "7615fc63a5afeb4ef5f213b9fdd8fa40dfadb136bf2c20b37493ea16f3502d3d",
+      "candidate_count": 3,
+      "alignment_error": null,
+      "attempted_characters": 458,
+      "retrieved_at": "2026-09-29T02:33:40.614093+00:00"
+    },
+    {
+      "revision": 1,
+      "cached": false,
+      "source_characters": 59,
+      "source_utf8_bytes": 109,
+      "source_sha256": "7615fc63a5afeb4ef5f213b9fdd8fa40dfadb136bf2c20b37493ea16f3502d3d",
+      "candidate_count": 3,
+      "alignment_error": null,
+      "attempted_characters": 458,
+      "retrieved_at": "2026-09-29T02:33:40.614093+00:00"
+    }
+  ],
+  "new_network_calls": 1,
+  "budget_before": 399,
+  "budget_after": 458,
+  "revisions": [
+    {
+      "revision": 1,
+      "outside_safe_modified_pixels": 0,
+      "edited_regions": 1,
+      "image_sha256": "88577d59fefb64fb125f3d6fac48af8245174c5c4595118240a2534a9764f44e"
+    },
+    {
+      "revision": 2,
+      "outside_safe_modified_pixels": 0,
+      "edited_regions": 1,
+      "image_sha256": "aa35c7915a3b5c9702cbd5150dff52a05833792632c73a7e47d5b644d15b8f9b"
+    },
+    {
+      "revision": 3,
+      "outside_safe_modified_pixels": 0,
+      "edited_regions": 0,
+      "image_sha256": "97829fcd7908a98a6527d8d00240398614b6f74983df5745c7b82b0129c44920"
+    },
+    {
+      "revision": 4,
+      "outside_safe_modified_pixels": 0,
+      "edited_regions": 1,
+      "image_sha256": "aa35c7915a3b5c9702cbd5150dff52a05833792632c73a7e47d5b644d15b8f9b"
+    }
+  ],
+  "restored_revision_3_equals_baseline": true,
+  "export_equals_current_revision": true,
+  "language_review": "NOT_HUMAN_VERIFIED",
+  "safe_regions_covered": 1,
+  "unsafe_regions_preserved": 2,
+  "ui_observed": [
+    "edit",
+    "save",
+    "context_preview",
+    "candidate_fill",
+    "restore",
+    "cache_hit",
+    "restart_persistence",
+    "crop_preview",
+    "download_event"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "kind": "REAL_SIX_IMAGE_RERENDER_NO_NETWORK",
+  "samples": [
+    {
+      "sample_id": "ko-pc-ep01-1",
+      "regions": 2,
+      "covered": 2,
+      "restored_vs_baseline_changed_pixels": 0,
+      "outside_safe_modified_pixels": 0,
+      "original_unchanged": true
+    },
+    {
+      "sample_id": "ko-pc-ep01-2",
+      "regions": 2,
+      "covered": 2,
+      "restored_vs_baseline_changed_pixels": 0,
+      "outside_safe_modified_pixels": 0,
+      "original_unchanged": true
+    },
+    {
+      "sample_id": "ko-pc-ep03-1",
+      "regions": 3,
+      "covered": 1,
+      "restored_vs_baseline_changed_pixels": 0,
+      "outside_safe_modified_pixels": 0,
+      "original_unchanged": true
+    },
+    {
+      "sample_id": "fx-ko-plain",
+      "regions": 1,
+      "covered": 1,
+      "restored_vs_baseline_changed_pixels": 0,
+      "outside_safe_modified_pixels": 0,
+      "original_unchanged": true
+    },
+    {
+      "sample_id": "fx-ko-small",
+      "regions": 1,
+      "covered": 1,
+      "restored_vs_baseline_changed_pixels": 0,
+      "outside_safe_modified_pixels": 0,
+      "original_unchanged": true
+    },
+    {
+      "sample_id": "fx-ko-seam",
+      "regions": 2,
+      "covered": 2,
+      "restored_vs_baseline_changed_pixels": 0,
+      "outside_safe_modified_pixels": 0,
+      "original_unchanged": true
+    }
+  ],
+  "cache_unchanged": true,
+  "runtime_source_sha256": {
+    "services/worker/proofreading.py": "e252bdd0f017dc412f7d2d3a9f1c04ea4ebd2a0f30505047bdd63b4cc734cd35",
+    "services/worker/bubble_render.py": "f4d2e5ef1c209da19f7eeb79edecdd149d071aec57b33c3c95146e4e1dc2ecec"
+  }
+}

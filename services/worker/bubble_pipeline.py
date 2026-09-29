@@ -13,6 +13,7 @@ from PIL import Image, ImageDraw
 
 from services.worker.bubble_render import prepare_region, render_region
 from services.worker.bubble_vision import BubbleDetector, MangaOcr
+from services.worker.private_store import exclusive, write_json
 from services.worker.translation import MyMemoryTranslator, TranslationError
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -48,11 +49,15 @@ class BubblePipeline:
         return {**output, "confidence": confidence, "reason": reason}
 
     def save_cache(self):
-        temporary = self.cache_file.with_suffix(".partial")
-        temporary.write_text(json.dumps(self.cache, ensure_ascii=False), encoding="utf-8")
-        temporary.replace(self.cache_file)
+        write_json(self.cache_file, self.cache)
 
     def translate(self, text, language):
+        with exclusive(self.cache_file.with_suffix(".lock")):
+            if self.cache_file.exists():
+                self.cache = json.loads(self.cache_file.read_text(encoding="utf-8"))
+            return self._translate_locked(text, language)
+
+    def _translate_locked(self, text, language):
         key = hashlib.sha256(f"mymemory-v1:{language}:zh-CN:{text}".encode()).hexdigest()
         if key in self.cache["entries"]:
             return self.cache["entries"][key], True

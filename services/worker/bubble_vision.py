@@ -5,7 +5,6 @@ import unicodedata
 from pathlib import Path
 
 import numpy as np
-import onnxruntime as ort
 from PIL import Image
 
 WEIGHTS = Path(__file__).resolve().parents[2] / "models/weights"
@@ -25,6 +24,8 @@ def load_model(name):
     path = WEIGHTS / name
     if hashlib.sha256(path.read_bytes()).hexdigest() != HASHES[name]:
         raise ValueError("MODEL_HASH_MISMATCH")
+    import onnxruntime as ort
+
     options = ort.SessionOptions()
     options.intra_op_num_threads = 4
     options.inter_op_num_threads = 1
