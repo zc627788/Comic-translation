@@ -1,0 +1,23 @@
+{
+  "id": "korean-ppocr-v5",
+  "publisher": "PaddlePaddle",
+  "revision": "5c6f574b8e2230adf4287b33e736d71b9fabd28e",
+  "card_url": "https://huggingface.co/PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx",
+  "license_claim": "Apache-2.0 official model card; dataset rights not independently audited",
+  "scope": "local research; no weight redistribution",
+  "files": [
+    {
+      "path": "korean-ppocr-v5/inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx/resolve/5c6f574b8e2230adf4287b33e736d71b9fabd28e/inference.yml",
+      "sha256": "f757fa1c40e99edcf27e9cce879b93eb2a51fa46f5ef39095689b8c37dd75998",
+      "bytes": 96039
+    },
+    {
+      "path": "korean-ppocr-v5/inference.onnx",
+      "url": "https://huggingface.co/PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx/resolve/5c6f574b8e2230adf4287b33e736d71b9fabd28e/inference.onnx",
+      "sha256": "92f0b7785e64fc9090106a241cf4c1eb97472824558272751b88a2a4476d3a08",
+      "bytes": 13418787,
+      "hash_source": "official Hugging Face LFS metadata"
+    }
+  ]
+}

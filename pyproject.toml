@@ -19,6 +19,7 @@ vision = [
     "onnxruntime==1.30.0",
     "opencv-python-headless==5.0.0.93",
     "pillow==12.3.0",
+    "pyyaml==6.0.3",
 ]
 
 [tool.uv]

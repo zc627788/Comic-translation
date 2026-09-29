@@ -1,0 +1,178 @@
+{
+  "annotation_sha256": "32705a626fabfe3cc95bf3dbee172b9d12f9a9139ca0831e32f7194fe49b8b0e",
+  "previous_annotation_sha256": "492a84f99738e78a9296cf88875eceac83043e597f10040ff4faac0fef01d549",
+  "reviewer": "AI source/raster cross-check; no human sign-off",
+  "reference_kind": "official-source-assisted development reference",
+  "regions": [
+    {
+      "id": "ko-pc-ep01-2-0",
+      "page": "ko-pc-ep01-2",
+      "image_sha256": "9ef666b15f548f589c6de06f3d222d2cf25c0393e98efc5bf58c57228dbec7a6",
+      "box": [
+        1710,
+        278,
+        1885,
+        431
+      ],
+      "source": {
+        "url": "https://www.peppercarrot.com/0_sources/ep01_Potion-of-Flight/lang/kr/E01P02.svg",
+        "sha256": "a20b9daff9f138611de94fd847c22acb76db81d06f99b376abf71c7cdd2a6886",
+        "element_ids": [
+          "flowPara4754",
+          "flowPara4760"
+        ]
+      },
+      "changed": false,
+      "previously_scored": true
+    },
+    {
+      "id": "ko-pc-ep01-2-1",
+      "page": "ko-pc-ep01-2",
+      "image_sha256": "9ef666b15f548f589c6de06f3d222d2cf25c0393e98efc5bf58c57228dbec7a6",
+      "box": [
+        1215,
+        1265,
+        1500,
+        1425
+      ],
+      "source": {
+        "url": "https://www.peppercarrot.com/0_sources/ep01_Potion-of-Flight/lang/kr/E01P02.svg",
+        "sha256": "a20b9daff9f138611de94fd847c22acb76db81d06f99b376abf71c7cdd2a6886",
+        "element_ids": [
+          "flowPara4780",
+          "flowPara4787"
+        ]
+      },
+      "changed": false,
+      "previously_scored": true
+    },
+    {
+      "id": "ko-pc-ep03-1-0",
+      "page": "ko-pc-ep03-1",
+      "image_sha256": "e3dcf3d2efb3d4191f09b4d17ef760ccc78d0a903f1051f543a34d90b1cac307",
+      "box": [
+        300,
+        2100,
+        550,
+        2320
+      ],
+      "source": {
+        "url": "https://www.peppercarrot.com/0_sources/ep03_The-secret-ingredients/lang/kr/E03P01.svg",
+        "sha256": "2f7a093442192648eb2352875c3211635781bd5c7adf70896de49be6c4573313",
+        "element_ids": [
+          "flowPara3380",
+          "flowPara3381",
+          "flowPara3383"
+        ]
+      },
+      "changed": false,
+      "previously_scored": true
+    },
+    {
+      "id": "ko-pc-ep03-1-1",
+      "page": "ko-pc-ep03-1",
+      "image_sha256": "e3dcf3d2efb3d4191f09b4d17ef760ccc78d0a903f1051f543a34d90b1cac307",
+      "box": [
+        1135,
+        2100,
+        1365,
+        2250
+      ],
+      "source": {
+        "url": "https://www.peppercarrot.com/0_sources/ep03_The-secret-ingredients/lang/kr/E03P01.svg",
+        "sha256": "2f7a093442192648eb2352875c3211635781bd5c7adf70896de49be6c4573313",
+        "element_ids": [
+          "flowPara3388",
+          "flowPara3387"
+        ]
+      },
+      "changed": true,
+      "previously_scored": true
+    },
+    {
+      "id": "ko-pc-ep03-1-2",
+      "page": "ko-pc-ep03-1",
+      "image_sha256": "e3dcf3d2efb3d4191f09b4d17ef760ccc78d0a903f1051f543a34d90b1cac307",
+      "box": [
+        2075,
+        2390,
+        2225,
+        2480
+      ],
+      "source": {
+        "url": "https://www.peppercarrot.com/0_sources/ep03_The-secret-ingredients/lang/kr/E03P01.svg",
+        "sha256": "2f7a093442192648eb2352875c3211635781bd5c7adf70896de49be6c4573313",
+        "element_ids": [
+          "flowPara3080-9"
+        ]
+      },
+      "changed": false,
+      "previously_scored": true
+    },
+    {
+      "id": "ko-pc-ep04-1-0",
+      "page": "ko-pc-ep04-1",
+      "image_sha256": "b88faa53287efd3f5ec3a5914a61f546a201c59e8849a320d042573717bdab67",
+      "box": [
+        480,
+        2150,
+        993,
+        2365
+      ],
+      "source": {
+        "url": "https://www.peppercarrot.com/0_sources/ep04_Stroke-of-genius/lang/kr/E04P01.svg",
+        "sha256": "750d5739e287ec0d59a64de9ea10f52ebe6ebc6c35f28757da355ea7923a8fa0",
+        "element_ids": [
+          "flowPara3033",
+          "flowPara3798",
+          "flowPara3363"
+        ]
+      },
+      "changed": true,
+      "previously_scored": true
+    },
+    {
+      "id": "ko-pc-ep04-1-1",
+      "page": "ko-pc-ep04-1",
+      "image_sha256": "b88faa53287efd3f5ec3a5914a61f546a201c59e8849a320d042573717bdab67",
+      "box": [
+        680,
+        2430,
+        955,
+        2625
+      ],
+      "source": {
+        "url": "https://www.peppercarrot.com/0_sources/ep04_Stroke-of-genius/lang/kr/E04P01.svg",
+        "sha256": "750d5739e287ec0d59a64de9ea10f52ebe6ebc6c35f28757da355ea7923a8fa0",
+        "element_ids": [
+          "flowPara3391",
+          "flowPara3374",
+          "flowPara3376"
+        ]
+      },
+      "changed": false,
+      "previously_scored": true
+    },
+    {
+      "id": "ko-pc-ep04-1-2",
+      "page": "ko-pc-ep04-1",
+      "image_sha256": "b88faa53287efd3f5ec3a5914a61f546a201c59e8849a320d042573717bdab67",
+      "box": [
+        1820,
+        2100,
+        2290,
+        2285
+      ],
+      "source": {
+        "url": "https://www.peppercarrot.com/0_sources/ep04_Stroke-of-genius/lang/kr/E04P01.svg",
+        "sha256": "750d5739e287ec0d59a64de9ea10f52ebe6ebc6c35f28757da355ea7923a8fa0",
+        "element_ids": [
+          "flowPara3380",
+          "flowPara3365"
+        ]
+      },
+      "changed": true,
+      "previously_scored": false
+    }
+  ]
+}

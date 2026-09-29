@@ -20,6 +20,13 @@ def make_handler(corpus, run_id):
             sid = row["id"]
             files[f"/ocr-crops/{sid}.png"] = (
                 comparison / "raw-1x-block" / f"{sid}.png", "image/png")
+    model_run = corpus.parent / "korean-model-v2" / "models-v2"
+    if (model_run / "review.html").is_file():
+        files["/models"] = (model_run / "review.html", "text/html; charset=utf-8")
+        annotations = json.loads((model_run.parent / "annotations-v2.json").read_text("utf-8"))
+        for row in annotations["regions"]:
+            sid = row["id"]
+            files[f"/model-crops/{sid}.png"] = (model_run / f"{sid}.png", "image/png")
     for sample in manifest["samples"]:
         sid = sample["id"]
         files[f"/images/{sid}.png"] = (corpus / sample["path"], "image/png")

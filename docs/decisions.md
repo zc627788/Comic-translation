@@ -70,3 +70,7 @@
 ## DEC-017：韩文暂定视觉标注与配置对比
 
 先按 docs/korean-ocr-comparison-plan.md 冻结独立于 OCR 输出的 AI 视觉暂定标注，再比较固定权重/裁图的配置；不称人工真值，不将开发集选优当泛化结论。安全区改变必须有保护测试和冻结基线回归。P01 仍 HOLD。
+
+## DEC-018：官方源复核与新的韩文模型
+
+按 docs/korean-model-comparison-plan.md 对冻结裁图采用官方 SVG 文本交叉核对并建立标注 v2；比较官方 Korean PP-OCRv5 ONNX 与现有 Tesseract。行切分不使用答案，所有旧候选以新参考重算。研究实跑不自动改变默认模型。

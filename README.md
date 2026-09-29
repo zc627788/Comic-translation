@@ -48,3 +48,5 @@ npm run fixtures
 最新 [30 图基线报告](reports/P01-quality-baseline.md) 与 [执行方案](docs/quality-baseline-plan.md) 已落地。30 图真实检测/OCR，缓存覆盖 7 处，不等于 30 图完成翻译；P01 仍 HOLD。复现命令与本地对照页见报告。
 
 最新 [韩文 OCR 四配置比较与保护环修复](reports/P01-korean-ocr-comparison.md)：3 页暂定视觉转录、四配置实跑、30 图安全回归；未更换默认 OCR，覆盖数未增加。
+
+最新 [新韩文模型与官方源复核](reports/P01-korean-models.md)：修正参考后，同一 8 处裁图上 Paddle 自动分行 17/144 字符错误，旧模型最佳 47/144。默认未切换；先扩大自动裁图验证。
