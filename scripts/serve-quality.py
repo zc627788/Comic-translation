@@ -12,6 +12,14 @@ ROOT = Path(__file__).resolve().parents[1]
 def make_handler(corpus, run_id):
     manifest = json.loads((corpus / "manifest.json").read_text(encoding="utf-8"))
     files = {"/": (corpus / "runs" / run_id / "review.html", "text/html; charset=utf-8")}
+    comparison = corpus.parent / "korean-comparison-v1" / "comparison-v1"
+    if (comparison / "review.html").is_file():
+        files["/ocr"] = (comparison / "review.html", "text/html; charset=utf-8")
+        annotations = json.loads((comparison.parent / "annotations-v1.json").read_text("utf-8"))
+        for row in annotations["regions"]:
+            sid = row["id"]
+            files[f"/ocr-crops/{sid}.png"] = (
+                comparison / "raw-1x-block" / f"{sid}.png", "image/png")
     for sample in manifest["samples"]:
         sid = sample["id"]
         files[f"/images/{sid}.png"] = (corpus / sample["path"], "image/png")
@@ -50,12 +58,13 @@ def make_handler(corpus, run_id):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--run-id", default="baseline-v1")
+    parser.add_argument("--port", default=4177, type=int)
     args = parser.parse_args()
     if not args.run_id.replace("-", "").isalnum():
         parser.error("Invalid run ID")
     handler = make_handler(ROOT / "artifacts/private/quality-v1", args.run_id)
-    print("Read-only evidence: http://127.0.0.1:4177/", flush=True)
-    ThreadingHTTPServer(("127.0.0.1", 4177), handler).serve_forever()
+    print(f"Read-only evidence: http://127.0.0.1:{args.port}/", flush=True)
+    ThreadingHTTPServer(("127.0.0.1", args.port), handler).serve_forever()
 
 
 if __name__ == "__main__":

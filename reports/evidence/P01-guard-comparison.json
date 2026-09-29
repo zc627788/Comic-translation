@@ -1,0 +1,14 @@
+{
+  "baseline_run": "baseline-v1",
+  "candidate_run": "guard-v2",
+  "images": 30,
+  "before_covered": 7,
+  "after_covered": 7,
+  "changed_output_images": [],
+  "source_sha256": {
+    "services/worker/bubble_render.py": "f4d2e5ef1c209da19f7eeb79edecdd149d071aec57b33c3c95146e4e1dc2ecec",
+    "services/worker/ocr_korean.mjs": "f4b998b30120c62175a434ed6a226eed93a94076b201b4ce938a0664338829d1",
+    "scripts/run-quality-baseline.py": "fe2d93c8e9038fd6e60c72bfb81e7cf5ff8e83fe395b4e070bb1da899e1bab6c"
+  },
+  "source_hash_capture": "after run; these files unchanged during run"
+}

@@ -1,0 +1,239 @@
+{
+  "annotation_sha256": "492a84f99738e78a9296cf88875eceac83043e597f10040ff4faac0fef01d549",
+  "annotation_status": "provisional_ai_visual_not_human_reviewed",
+  "regions": 8,
+  "scored_regions": 7,
+  "evaluation": "reference crops only; not end-to-end detector accuracy",
+  "candidate_script_sha256": "f4b998b30120c62175a434ed6a226eed93a94076b201b4ce938a0664338829d1",
+  "runner_sha256": "0f9900f4c7063220437c8425bfa70579757a7c99e056ce1d8a985a02b85c8372",
+  "results": [
+    {
+      "variant": "raw-3x-block",
+      "reference_characters": 126,
+      "edit_errors": 50,
+      "cer": 0.3968253968253968,
+      "per_region": [
+        {
+          "id": "ko-pc-ep01-2-0",
+          "reference_characters": 8,
+          "edit_errors": 5,
+          "confidence": 63
+        },
+        {
+          "id": "ko-pc-ep01-2-1",
+          "reference_characters": 13,
+          "edit_errors": 4,
+          "confidence": 70
+        },
+        {
+          "id": "ko-pc-ep03-1-0",
+          "reference_characters": 21,
+          "edit_errors": 8,
+          "confidence": 55
+        },
+        {
+          "id": "ko-pc-ep03-1-1",
+          "reference_characters": 16,
+          "edit_errors": 12,
+          "confidence": 52
+        },
+        {
+          "id": "ko-pc-ep03-1-2",
+          "reference_characters": 5,
+          "edit_errors": 3,
+          "confidence": 53
+        },
+        {
+          "id": "ko-pc-ep04-1-0",
+          "reference_characters": 40,
+          "edit_errors": 9,
+          "confidence": 87
+        },
+        {
+          "id": "ko-pc-ep04-1-1",
+          "reference_characters": 23,
+          "edit_errors": 9,
+          "confidence": 65
+        },
+        {
+          "id": "ko-pc-ep04-1-2",
+          "reference_characters": null,
+          "edit_errors": null,
+          "confidence": 77
+        }
+      ],
+      "elapsed_ms": 1119
+    },
+    {
+      "variant": "raw-1x-block",
+      "reference_characters": 126,
+      "edit_errors": 47,
+      "cer": 0.373015873015873,
+      "per_region": [
+        {
+          "id": "ko-pc-ep01-2-0",
+          "reference_characters": 8,
+          "edit_errors": 8,
+          "confidence": 58
+        },
+        {
+          "id": "ko-pc-ep01-2-1",
+          "reference_characters": 13,
+          "edit_errors": 10,
+          "confidence": 55
+        },
+        {
+          "id": "ko-pc-ep03-1-0",
+          "reference_characters": 21,
+          "edit_errors": 0,
+          "confidence": 86
+        },
+        {
+          "id": "ko-pc-ep03-1-1",
+          "reference_characters": 16,
+          "edit_errors": 11,
+          "confidence": 67
+        },
+        {
+          "id": "ko-pc-ep03-1-2",
+          "reference_characters": 5,
+          "edit_errors": 3,
+          "confidence": 29
+        },
+        {
+          "id": "ko-pc-ep04-1-0",
+          "reference_characters": 40,
+          "edit_errors": 6,
+          "confidence": 80
+        },
+        {
+          "id": "ko-pc-ep04-1-1",
+          "reference_characters": 23,
+          "edit_errors": 9,
+          "confidence": 74
+        },
+        {
+          "id": "ko-pc-ep04-1-2",
+          "reference_characters": null,
+          "edit_errors": null,
+          "confidence": 77
+        }
+      ],
+      "elapsed_ms": 643
+    },
+    {
+      "variant": "otsu-3x-block",
+      "reference_characters": 126,
+      "edit_errors": 49,
+      "cer": 0.3888888888888889,
+      "per_region": [
+        {
+          "id": "ko-pc-ep01-2-0",
+          "reference_characters": 8,
+          "edit_errors": 7,
+          "confidence": 52
+        },
+        {
+          "id": "ko-pc-ep01-2-1",
+          "reference_characters": 13,
+          "edit_errors": 4,
+          "confidence": 75
+        },
+        {
+          "id": "ko-pc-ep03-1-0",
+          "reference_characters": 21,
+          "edit_errors": 9,
+          "confidence": 62
+        },
+        {
+          "id": "ko-pc-ep03-1-1",
+          "reference_characters": 16,
+          "edit_errors": 8,
+          "confidence": 52
+        },
+        {
+          "id": "ko-pc-ep03-1-2",
+          "reference_characters": 5,
+          "edit_errors": 3,
+          "confidence": 52
+        },
+        {
+          "id": "ko-pc-ep04-1-0",
+          "reference_characters": 40,
+          "edit_errors": 9,
+          "confidence": 85
+        },
+        {
+          "id": "ko-pc-ep04-1-1",
+          "reference_characters": 23,
+          "edit_errors": 9,
+          "confidence": 63
+        },
+        {
+          "id": "ko-pc-ep04-1-2",
+          "reference_characters": null,
+          "edit_errors": null,
+          "confidence": 86
+        }
+      ],
+      "elapsed_ms": 720
+    },
+    {
+      "variant": "raw-3x-sparse",
+      "reference_characters": 126,
+      "edit_errors": 95,
+      "cer": 0.753968253968254,
+      "per_region": [
+        {
+          "id": "ko-pc-ep01-2-0",
+          "reference_characters": 8,
+          "edit_errors": 4,
+          "confidence": 44
+        },
+        {
+          "id": "ko-pc-ep01-2-1",
+          "reference_characters": 13,
+          "edit_errors": 7,
+          "confidence": 58
+        },
+        {
+          "id": "ko-pc-ep03-1-0",
+          "reference_characters": 21,
+          "edit_errors": 18,
+          "confidence": 34
+        },
+        {
+          "id": "ko-pc-ep03-1-1",
+          "reference_characters": 16,
+          "edit_errors": 8,
+          "confidence": 21
+        },
+        {
+          "id": "ko-pc-ep03-1-2",
+          "reference_characters": 5,
+          "edit_errors": 3,
+          "confidence": 95
+        },
+        {
+          "id": "ko-pc-ep04-1-0",
+          "reference_characters": 40,
+          "edit_errors": 26,
+          "confidence": 55
+        },
+        {
+          "id": "ko-pc-ep04-1-1",
+          "reference_characters": 23,
+          "edit_errors": 29,
+          "confidence": 55
+        },
+        {
+          "id": "ko-pc-ep04-1-2",
+          "reference_characters": null,
+          "edit_errors": null,
+          "confidence": 63
+        }
+      ],
+      "elapsed_ms": 1091
+    }
+  ]
+}

@@ -17,7 +17,7 @@
 
 ## 当前可执行动作
 
-**可以继续 P01：韩文 OCR 对比、真实页独立标注及授权韩国原创样本补齐。** 最新交接见 [30 图固定基线报告](../reports/P01-quality-baseline.md)；已跑完检测/OCR，未完成 30 图全部翻译，P01 仍 HOLD。 已完成 [日文与韩文气泡覆盖实验](../reports/P01-bubble-overlay.md)，其完整总结接收上轮免费实验。先按 [覆盖阅读器说明](bubble-overlay-experiment.md) 复查结果，再扩充授权样本与继续 T008/T009。
+**可以继续 P01：更合适的韩文 OCR 候选、真实页人工复核及授权韩国原创样本补齐。** 最新 [韩文配置比较报告](../reports/P01-korean-ocr-comparison.md) 完成 3 页暂定视觉转录、四配置实测与完整保护环修复；30 图回归覆盖数仍为 7，未选出新 OCR 默认。 最新交接见 [30 图固定基线报告](../reports/P01-quality-baseline.md)；已跑完检测/OCR，未完成 30 图全部翻译，P01 仍 HOLD。 已完成 [日文与韩文气泡覆盖实验](../reports/P01-bubble-overlay.md)，其完整总结接收上轮免费实验。先按 [覆盖阅读器说明](bubble-overlay-experiment.md) 复查结果，再扩充授权样本与继续 T008/T009。
 
 用户后续已授权接入免费 API 并选真实网站验证，替代之前“暂不接 API”的临时选择。已完成 [免费接口小样本实验](../reports/P01-free-api-probe.md)：MyMemory 真实请求可用，轻量整页 OCR 失败，人工框选后两条短句可读，仍有漏字和误译。未执行付费请求。**不可以进入 P02**。
 

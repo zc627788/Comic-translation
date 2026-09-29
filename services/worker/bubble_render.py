@@ -27,6 +27,28 @@ def largest_rectangle(mask):
     return rectangle
 
 
+def protected_text_rectangle(roi, text_box, bubble_box, bounds):
+    """Find a white guard ring, not just four white corners, around all text."""
+    x0, y0, x1, y1 = text_box
+    bx0, by0, bx1, by1 = bubble_box
+    left, top, _, _ = bounds
+    for padding in range(3, 13):
+        rx0, ry0, rx1, ry1 = x0 - padding, y0 - padding, x1 + padding, y1 + padding
+        if min(rx0 - bx0, ry0 - by0, bx1 - rx1, by1 - ry1) < 2:
+            continue
+        rx0, ry0, rx1, ry1 = rx0 - left, ry0 - top, rx1 - left, ry1 - top
+        if min(rx0, ry0) < 0 or rx1 > roi.shape[1] or ry1 > roi.shape[0]:
+            continue
+        patch = roi[ry0:ry1, rx0:rx1]
+        ring = np.concatenate((patch[:2].reshape(-1, 3), patch[-2:].reshape(-1, 3),
+                               patch[:, :2].reshape(-1, 3), patch[:, -2:].reshape(-1, 3)))
+        if ring.size and ring.min() >= 235:
+            safe = np.zeros(roi.shape[:2], np.uint8)
+            safe[ry0 + 2:ry1 - 2, rx0 + 2:rx1 - 2] = 255
+            return safe
+    raise ValueError("OPEN_BUBBLE_BOUNDARY")
+
+
 def prepare_region(image, region):
     pixels = np.asarray(image)
     height, width = pixels.shape[:2]
@@ -59,12 +81,7 @@ def prepare_region(image, region):
         if touches_edge:
             # A tail can leave the detector ROI. Restrict fallback to the contained
             # text rectangle, never fill the open background or whole bubble box.
-            if min(x0 - bx0, y0 - by0, bx1 - x1, by1 - y1) < 4:
-                raise ValueError("OPEN_BUBBLE_BOUNDARY")
-            corners = [roi[y, x].min() for y in (ty0, ty1 - 1) for x in (tx0, tx1 - 1)]
-            if min(corners) < 235:
-                raise ValueError("OPEN_BUBBLE_BOUNDARY")
-            safe = text_mask.copy()
+            safe = protected_text_rectangle(roi, region["box"], region["bubble"], bounds)
             method = "white-text-interior"
         else:
             contours, _ = cv2.findContours(component, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)

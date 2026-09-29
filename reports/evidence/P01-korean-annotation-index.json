@@ -1,0 +1,148 @@
+{
+  "annotation_sha256": "492a84f99738e78a9296cf88875eceac83043e597f10040ff4faac0fef01d549",
+  "status": "provisional_ai_visual_not_human_reviewed",
+  "frozen_before_candidate_ocr": true,
+  "pages": [
+    {
+      "page": "ko-pc-ep01-2",
+      "scored_dialogues": 2,
+      "dialogues_total": 2,
+      "uncertain_truth_regions": 0
+    },
+    {
+      "page": "ko-pc-ep03-1",
+      "scored_dialogues": 3,
+      "dialogues_total": 3,
+      "uncertain_truth_regions": 0
+    },
+    {
+      "page": "ko-pc-ep04-1",
+      "scored_dialogues": 2,
+      "dialogues_total": 3,
+      "uncertain_truth_regions": 1
+    }
+  ],
+  "regions": [
+    {
+      "id": "ko-pc-ep01-2-0",
+      "page": "ko-pc-ep01-2",
+      "image_sha256": "9ef666b15f548f589c6de06f3d222d2cf25c0393e98efc5bf58c57228dbec7a6",
+      "box": [
+        1710,
+        278,
+        1885,
+        431
+      ],
+      "legible": true,
+      "role": "dialogue",
+      "status": "provisional_ai_visual",
+      "uncertainty": null
+    },
+    {
+      "id": "ko-pc-ep01-2-1",
+      "page": "ko-pc-ep01-2",
+      "image_sha256": "9ef666b15f548f589c6de06f3d222d2cf25c0393e98efc5bf58c57228dbec7a6",
+      "box": [
+        1215,
+        1265,
+        1500,
+        1425
+      ],
+      "legible": true,
+      "role": "dialogue",
+      "status": "provisional_ai_visual",
+      "uncertainty": null
+    },
+    {
+      "id": "ko-pc-ep03-1-0",
+      "page": "ko-pc-ep03-1",
+      "image_sha256": "e3dcf3d2efb3d4191f09b4d17ef760ccc78d0a903f1051f543a34d90b1cac307",
+      "box": [
+        300,
+        2100,
+        550,
+        2320
+      ],
+      "legible": true,
+      "role": "dialogue",
+      "status": "provisional_ai_visual",
+      "uncertainty": null
+    },
+    {
+      "id": "ko-pc-ep03-1-1",
+      "page": "ko-pc-ep03-1",
+      "image_sha256": "e3dcf3d2efb3d4191f09b4d17ef760ccc78d0a903f1051f543a34d90b1cac307",
+      "box": [
+        1135,
+        2100,
+        1365,
+        2250
+      ],
+      "legible": true,
+      "role": "dialogue",
+      "status": "provisional_ai_visual",
+      "uncertainty": null
+    },
+    {
+      "id": "ko-pc-ep03-1-2",
+      "page": "ko-pc-ep03-1",
+      "image_sha256": "e3dcf3d2efb3d4191f09b4d17ef760ccc78d0a903f1051f543a34d90b1cac307",
+      "box": [
+        2075,
+        2390,
+        2225,
+        2480
+      ],
+      "legible": true,
+      "role": "dialogue",
+      "status": "provisional_ai_visual",
+      "uncertainty": null
+    },
+    {
+      "id": "ko-pc-ep04-1-0",
+      "page": "ko-pc-ep04-1",
+      "image_sha256": "b88faa53287efd3f5ec3a5914a61f546a201c59e8849a320d042573717bdab67",
+      "box": [
+        480,
+        2150,
+        993,
+        2365
+      ],
+      "legible": true,
+      "role": "dialogue",
+      "status": "provisional_ai_visual",
+      "uncertainty": null
+    },
+    {
+      "id": "ko-pc-ep04-1-1",
+      "page": "ko-pc-ep04-1",
+      "image_sha256": "b88faa53287efd3f5ec3a5914a61f546a201c59e8849a320d042573717bdab67",
+      "box": [
+        680,
+        2430,
+        955,
+        2625
+      ],
+      "legible": true,
+      "role": "dialogue",
+      "status": "provisional_ai_visual",
+      "uncertainty": null
+    },
+    {
+      "id": "ko-pc-ep04-1-2",
+      "page": "ko-pc-ep04-1",
+      "image_sha256": "b88faa53287efd3f5ec3a5914a61f546a201c59e8849a320d042573717bdab67",
+      "box": [
+        1820,
+        2100,
+        2290,
+        2285
+      ],
+      "legible": false,
+      "role": "dialogue",
+      "status": "provisional_ai_visual",
+      "uncertainty": "elongated shout segmentation uncertain; exclude CER, retain missing annotation"
+    }
+  ],
+  "box_semantics": "padded reference crops; not tight text boxes; detection recall remains unmeasured"
+}
